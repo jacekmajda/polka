@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Regulamin darowizn Fundacji Polka — zasady przekazywania i wykorzystania darowizn. KRS 0001359566." />
+    <meta name="theme-color" content="#FFE9E9" />
+    <link rel="canonical" href="https://polka.eu/regulamin.html" />
+
+    <!-- Social previews: Facebook, Messenger, Instagram (DM links), WhatsApp, LinkedIn, X/Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fundacja Polka" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:url" content="https://polka.eu/regulamin.html" />
+    <meta property="og:title" content="Regulamin darowizn — Fundacja Polka" />
+    <meta property="og:description" content="Zasady przekazywania i wykorzystania darowizn na rzecz Fundacji Polka." />
+    <meta property="og:image" content="https://polka.eu/og/og-default.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fundacja Polka — regulamin darowizn" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Regulamin darowizn — Fundacja Polka" />
+    <meta name="twitter:description" content="Zasady przekazywania i wykorzystania darowizn na rzecz Fundacji Polka." />
+    <meta name="twitter:image" content="https://polka.eu/og/og-default.png" />
+    <meta name="twitter:image:alt" content="Fundacja Polka — regulamin darowizn" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Regulamin darowizn — Fundacja Polka</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <a href="#main" class="skip-link">Przejdź do treści</a>
+
+    <!-- TOP BAR -->
+    <header class="topbar" id="topbar">
+        <a href="index.html" class="brand" aria-label="Fundacja Polka — strona główna">
+            <span class="visually-hidden">Fundacja Polka</span>
+            <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <rect class="brand-mark-tile" width="128" height="128" rx="28" />
+                <path class="brand-mark-p" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z" />
+                <circle class="brand-mark-dot" cx="94.64" cy="85.7" r="9.3" />
+            </svg>
+        </a>
+
+        <p class="topbar-meta label">KRS&nbsp;0001359566 <span class="sep">/</span> NIP&nbsp;8971958187</p>
+
+        <nav class="topnav" aria-label="Nawigacja główna">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact" class="topnav-cta">Kontakt <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="menu-btn-label">Menu</span>
+            <span class="menu-btn-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+    <div class="menu" id="menu" hidden>
+        <nav class="menu-nav" aria-label="Menu">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj nas</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact"><span class="idx">06</span> Kontakt</a>
+        </nav>
+        <div class="menu-foot label">
+            <span>polka@polka.eu</span>
+            <span>+48 888 399 665</span>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="doc-head">
+            <div class="hero-head">
+                <p class="label">(01) <span class="sep">/</span> Dokumenty</p>
+                <p class="label">Polska <span class="sep">/</span> EST. 2025 <span class="sep">/</span> <span id="clock">--:--</span></p>
+            </div>
+
+            <div class="section-head">
+                <p class="label">Darowizny</p>
+                <h1 class="section-title">Regulamin <span class="accent">darowizn</span></h1>
+            </div>
+
+            <p class="doc-lead">Dziękujemy, że chcesz nas wesprzeć. Poniżej znajdziesz krótkie zasady przekazywania darowizn na rzecz Fundacji Polka i ich wykorzystania.</p>
+
+            <dl class="doc-meta">
+                <div><dt class="label">Numer konta</dt><dd>16 1600 1462 1786 9193 5000 0001</dd></div>
+                <div><dt class="label">BLIK</dt><dd>+48 888 399 665</dd></div>
+                <div><dt class="label">Wersja</dt><dd>1.0</dd></div>
+                <div><dt class="label">Obowiązuje od</dt><dd>08.10.2026</dd></div>
+            </dl>
+        </section>
+
+        <section id="regulamin" class="about doc">
+            <aside class="about-aside">
+                <p class="label sticky-label">(02) <span class="sep">/</span> Spis treści</p>
+                <h2 class="about-heading">Regulamin</h2>
+                <nav class="doc-toc" aria-label="Spis treści regulaminu">
+                    <a href="#g1">§1 &middot; Postanowienia ogólne</a>
+                    <a href="#g2">§2 &middot; Sposoby przekazania darowizny</a>
+                    <a href="#g3">§3 &middot; Przeznaczenie darowizn</a>
+                    <a href="#g4">§4 &middot; Bezzwrotność darowizn</a>
+                    <a href="#g5">§5 &middot; Potwierdzenie i rozliczenie</a>
+                    <a href="#g6">§6 &middot; Dane osobowe</a>
+                    <a href="#g7">§7 &middot; Postanowienia końcowe</a>
+                    <a href="#historia">Historia zmian</a>
+                </nav>
+            </aside>
+
+            <div class="rows">
+                <article class="row" id="g1" data-reveal>
+                    <p class="row-idx label">§1</p>
+                    <h3 class="row-title">Postanowienia ogólne</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Regulamin określa zasady przekazywania darowizn na rzecz <strong>Fundacji „Polka”</strong> z siedzibą we Wrocławiu, wpisanej do Krajowego Rejestru Sądowego pod numerem KRS 0001359566, NIP 8971958187, REGON 542459345, zwanej dalej „Fundacją”.</li>
+                            <li>Darczyńcą może być każda osoba fizyczna, osoba prawna lub jednostka organizacyjna, która przekazuje Fundacji darowiznę.</li>
+                            <li>Przekazanie darowizny oznacza akceptację niniejszego regulaminu.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g2" data-reveal>
+                    <p class="row-idx label">§2</p>
+                    <h3 class="row-title">Sposoby przekazania darowizny</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Darowiznę można przekazać przelewem na rachunek bankowy Fundacji o numerze <strong class="nowrap">16 1600 1462 1786 9193 5000 0001</strong> lub przelewem BLIK na numer telefonu <strong class="nowrap">+48 888 399 665</strong>.</li>
+                            <li>Darowizny są dobrowolne i nieodpłatne. Darczyńca sam decyduje o ich wysokości.</li>
+                            <li>Fundacja nie przyjmuje i nie dokonuje płatności w gotówce o wartości równej lub przekraczającej równowartość 10 000 euro, zgodnie z § 9 statutu.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g3" data-reveal>
+                    <p class="row-idx label">§3</p>
+                    <h3 class="row-title">Przeznaczenie darowizn</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Darowizny przeznaczane są wyłącznie na realizację celów statutowych Fundacji.</li>
+                            <li>Jeżeli w tytule wpłaty darczyńca wskaże konkretną zbiórkę lub projekt (np. „Wrocławskie zwierzaki”), Fundacja przeznacza darowiznę na ten cel.</li>
+                            <li>Jeżeli zebrana kwota przekroczy cel zbiórki albo zbiórki nie będzie można zrealizować, Fundacja przeznacza środki na inne cele statutowe, w miarę możliwości zbliżone do celu wskazanego przez darczyńcę.</li>
+                            <li>Darowizna bez wskazanego celu przeznaczana jest na bieżącą działalność statutową Fundacji.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g4" data-reveal>
+                    <p class="row-idx label">§4</p>
+                    <h3 class="row-title">Bezzwrotność darowizn</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li><strong>Przekazana darowizna jest ostateczna i nie może zostać wycofana w żaden sposób.</strong></li>
+                            <li>Fundacja nie zwraca przekazanych darowizn, w całości ani w części, niezależnie od sposobu ich przekazania.</li>
+                            <li>Przed dokonaniem wpłaty darczyńca powinien upewnić się co do jej kwoty oraz poprawności danych odbiorcy.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g5" data-reveal>
+                    <p class="row-idx label">§5</p>
+                    <h3 class="row-title">Potwierdzenie i rozliczenie</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Na prośbę darczyńcy przesłaną na adres <a href="mailto:polka@polka.eu">polka@polka.eu</a> Fundacja wystawia potwierdzenie otrzymania darowizny.</li>
+                            <li>Fundacja rozlicza otrzymane środki i publikuje sprawozdania ze swojej działalności na stronie <a href="sprawozdania.html">Sprawozdania</a>.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g6" data-reveal>
+                    <p class="row-idx label">§6</p>
+                    <h3 class="row-title">Dane osobowe</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Administratorem danych osobowych darczyńców jest Fundacja. Kontakt z Fundacją w sprawach danych osobowych: <a href="mailto:polka@polka.eu">polka@polka.eu</a>.</li>
+                            <li>Fundacja przetwarza dane przekazane wraz z darowizną (np. imię i nazwisko, numer rachunku, tytuł wpłaty) wyłącznie w celu przyjęcia i rozliczenia darowizny oraz wypełnienia obowiązków wynikających z przepisów prawa, w szczególności podatkowych i rachunkowych.</li>
+                            <li><strong>Fundacja nie gromadzi ani nie zatrzymuje danych osobowych darczyńców w żadnym innym celu niż prawne rozliczenie działalności Fundacji i prowadzonych zbiórek.</strong> Dane nie są wykorzystywane do celów marketingowych, nie są udostępniane ani sprzedawane innym podmiotom i nie służą do tworzenia baz darczyńców.</li>
+                            <li>Dane przechowywane są wyłącznie przez okres wymagany przepisami prawa, a po jego upływie są usuwane. Darczyńcy przysługuje prawo dostępu do swoich danych, ich sprostowania oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="g7" data-reveal>
+                    <p class="row-idx label">§7</p>
+                    <h3 class="row-title">Postanowienia końcowe</h3>
+                    <div class="row-body">
+                        <ol class="doc-list">
+                            <li>Regulamin w wersji 1.0 obowiązuje od dnia 8 października 2026 r.</li>
+                            <li>Fundacja może zmienić regulamin. Każda zmiana otrzymuje nowy numer wersji i datę obowiązywania, a jej opis publikowany jest w historii zmian poniżej. Zmiany nie dotyczą darowizn przekazanych przed ich wprowadzeniem.</li>
+                            <li>W sprawach nieuregulowanych regulaminem stosuje się przepisy prawa polskiego oraz statut Fundacji.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="row" id="historia" data-reveal>
+                    <p class="row-idx label">v</p>
+                    <h3 class="row-title">Historia zmian</h3>
+                    <div class="row-body">
+                        <dl class="deflist">
+                            <div>
+                                <dt>1.0 &middot; 08.10.2026</dt>
+                                <dd>Pierwsza wersja regulaminu.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="doc-foot">
+            <p class="label">Masz pytanie o darowizny?</p>
+            <div class="hero-actions">
+                <a href="mailto:polka@polka.eu" class="btn btn-solid" data-magnetic>
+                    Napisz do nas <span class="btn-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="index.html" class="btn btn-line" data-magnetic>
+                    Wróć na stronę główną <span class="btn-arrow" aria-hidden="true">↖</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <p class="label">Fundacja</p>
+                <p>NIP 8971958187</p>
+                <p>KRS 0001359566</p>
+                <p>REGON 542459345</p>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Kontakt</p>
+                <a href="mailto:polka@polka.eu" class="footer-link">polka@polka.eu</a>
+                <a href="tel:+48888399665" class="footer-link">+48 888 399 665</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Dokumenty</p>
+                <a href="statut.html" class="footer-link">Statut</a>
+                <a href="sprawozdania.html" class="footer-link">Sprawozdania</a>
+                <a href="regulamin.html" class="footer-link">Regulamin darowizn</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Social</p>
+                <a href="#instagram" class="footer-link">Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+            <span class="wordmark-top"><span>F</span><span>U</span><span>N</span><span>D</span><span>A</span><span>C</span><span>J</span><span>A</span></span>
+            <span class="wordmark-main">Polka</span>
+        </div>
+
+        <div class="footer-bottom label">
+            <span>© <span id="year">2026</span> Fundacja Polka</span>
+            <span>Działamy w Polsce — dla ludzi, zwierząt i lokalnych społeczności</span>
+            <a href="#main" class="to-top">Na górę <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+    (function () {
+        "use strict";
+
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        var root = document.documentElement;
+
+        /* ---------- clock (Warsaw) ---------- */
+        var clock = document.getElementById("clock");
+        function paintClock() {
+            try {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", {
+                    hour: "2-digit", minute: "2-digit", timeZone: "Europe/Warsaw"
+                });
+            } catch (err) {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+            }
+        }
+        paintClock();
+        window.setInterval(paintClock, 20000);
+
+        var year = document.getElementById("year");
+        if (year) { year.textContent = new Date().getFullYear(); }
+
+        /* ---------- scroll progress + header state ---------- */
+        var bar = document.querySelector(".progress span");
+        var topbar = document.getElementById("topbar");
+        function onScroll() {
+            var y = window.scrollY;
+            var max = document.body.scrollHeight - window.innerHeight;
+            bar.style.transform = "scaleX(" + (max > 0 ? y / max : 0) + ")";
+            topbar.classList.toggle("is-stuck", y > 40);
+        }
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        /* ---------- fullscreen menu ---------- */
+        var menuBtn = document.getElementById("menu-btn");
+        var menu = document.getElementById("menu");
+        function setMenu(open) {
+            document.body.classList.toggle("menu-open", open);
+            menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+            if (open) {
+                menu.hidden = false;
+                window.requestAnimationFrame(function () { menu.classList.add("is-open"); });
+            } else {
+                menu.classList.remove("is-open");
+                window.setTimeout(function () { if (!document.body.classList.contains("menu-open")) { menu.hidden = true; } }, 420);
+            }
+        }
+        menuBtn.addEventListener("click", function () {
+            setMenu(!document.body.classList.contains("menu-open"));
+        });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") { setMenu(false); } });
+
+        /* ---------- custom cursor ---------- */
+        var cursor = document.getElementById("cursor");
+        if (fine && !reduce) {
+            var cx = window.innerWidth / 2, cy = window.innerHeight / 2, tx = cx, ty = cy;
+            window.addEventListener("mousemove", function (e) {
+                if (!root.classList.contains("has-cursor")) {
+                    cx = tx = e.clientX;
+                    cy = ty = e.clientY;
+                    root.classList.add("has-cursor");
+                }
+                tx = e.clientX;
+                ty = e.clientY;
+            });
+            (function loop() {
+                cx += (tx - cx) * 0.18;
+                cy += (ty - cy) * 0.18;
+                cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0) translate(-50%,-50%)";
+                window.requestAnimationFrame(loop);
+            }());
+            document.addEventListener("mouseover", function (e) {
+                var hot = e.target.closest("a, button, .index-row, .copy-card");
+                cursor.classList.toggle("is-hot", !!hot);
+            });
+        }
+
+        /* ---------- magnetic buttons ---------- */
+        if (fine && !reduce) {
+            Array.prototype.forEach.call(document.querySelectorAll("[data-magnetic]"), function (el) {
+                el.addEventListener("mousemove", function (e) {
+                    var r = el.getBoundingClientRect();
+                    var dx = (e.clientX - (r.left + r.width / 2)) * 0.22;
+                    var dy = (e.clientY - (r.top + r.height / 2)) * 0.32;
+                    el.style.transform = "translate(" + dx + "px," + dy + "px)";
+                });
+                el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+            });
+        }
+
+        /* ---------- reveal on scroll ---------- */
+        var revealables = document.querySelectorAll(
+            "[data-reveal], [data-reveal-lines] .line, .section-head, .about-aside, .stat, .collab-body > *, .support-head > *, .copy-card, .projects-foot, .footer-col, .support .btn"
+        );
+        if (reduce || !("IntersectionObserver" in window)) {
+            Array.prototype.forEach.call(revealables, function (el) { el.classList.add("in"); });
+        } else {
+            Array.prototype.forEach.call(revealables, function (el, i) {
+                el.classList.add("rv");
+                el.style.transitionDelay = (i % 4) * 70 + "ms";
+            });
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+            Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
+        }
+
+        /* ---------- counting stats ---------- */
+        var nums = document.querySelectorAll(".stat-num");
+        if (!reduce && "IntersectionObserver" in window) {
+            var numObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) { return; }
+                    var el = entry.target;
+                    numObserver.unobserve(el);
+                    var target = parseInt(el.getAttribute("data-count"), 10);
+                    var suffix = el.getAttribute("data-suffix") || "";
+                    var start = performance.now();
+                    (function step(now) {
+                        var p = Math.min(1, (now - start) / 1100);
+                        var eased = 1 - Math.pow(1 - p, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (p < 1) { window.requestAnimationFrame(step); }
+                    }(start));
+                });
+            }, { threshold: 0.6 });
+            Array.prototype.forEach.call(nums, function (el) { numObserver.observe(el); });
+        }
+
+        /* ---------- copy to clipboard ---------- */
+        var toast = document.getElementById("toast");
+        var toastTimer;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add("is-visible");
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(function () { toast.classList.remove("is-visible"); }, 2400);
+        }
+        function fallbackCopy(text) {
+            var f = document.createElement("textarea");
+            f.value = text;
+            f.setAttribute("readonly", "");
+            f.style.position = "fixed";
+            f.style.opacity = "0";
+            document.body.appendChild(f);
+            f.select();
+            try { document.execCommand("copy"); } catch (err) { /* noop */ }
+            document.body.removeChild(f);
+        }
+        Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (el) {
+            el.addEventListener("click", function () {
+                var value = el.getAttribute("data-copy");
+                function done() {
+                    el.classList.add("is-copied");
+                    window.setTimeout(function () { el.classList.remove("is-copied"); }, 1300);
+                    showToast("Skopiowano: " + value);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(value).then(done, function () { fallbackCopy(value); done(); });
+                } else {
+                    fallbackCopy(value);
+                    done();
+                }
+            });
+        });
+    }());
+    </script>
+</body>
+</html>

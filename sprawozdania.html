@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sprawozdania finansowe i merytoryczne Fundacji Polka — jawne rozliczenie środków. KRS 0001359566." />
+    <meta name="theme-color" content="#FFE9E9" />
+    <link rel="canonical" href="https://polka.eu/sprawozdania.html" />
+
+    <!-- Social previews: Facebook, Messenger, Instagram (DM links), WhatsApp, LinkedIn, X/Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fundacja Polka" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:url" content="https://polka.eu/sprawozdania.html" />
+    <meta property="og:title" content="Sprawozdania — Fundacja Polka" />
+    <meta property="og:description" content="Sprawozdania finansowe i merytoryczne Fundacji Polka — jawne rozliczenie środków. KRS 0001359566." />
+    <meta property="og:image" content="https://polka.eu/og/og-default.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fundacja Polka — sprawozdania" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sprawozdania — Fundacja Polka" />
+    <meta name="twitter:description" content="Sprawozdania finansowe i merytoryczne Fundacji Polka — jawne rozliczenie środków. KRS 0001359566." />
+    <meta name="twitter:image" content="https://polka.eu/og/og-default.png" />
+    <meta name="twitter:image:alt" content="Fundacja Polka — sprawozdania" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Sprawozdania — Fundacja Polka</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <a href="#main" class="skip-link">Przejdź do treści</a>
+
+    <!-- TOP BAR -->
+    <header class="topbar" id="topbar">
+        <a href="index.html" class="brand" aria-label="Fundacja Polka — strona główna">
+            <span class="visually-hidden">Fundacja Polka</span>
+            <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <rect class="brand-mark-tile" width="128" height="128" rx="28" />
+                <path class="brand-mark-p" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z" />
+                <circle class="brand-mark-dot" cx="94.64" cy="85.7" r="9.3" />
+            </svg>
+        </a>
+
+        <p class="topbar-meta label">KRS&nbsp;0001359566 <span class="sep">/</span> NIP&nbsp;8971958187</p>
+
+        <nav class="topnav" aria-label="Nawigacja główna">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html" aria-current="page"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact" class="topnav-cta">Kontakt <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="menu-btn-label">Menu</span>
+            <span class="menu-btn-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+    <div class="menu" id="menu" hidden>
+        <nav class="menu-nav" aria-label="Menu">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj nas</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact"><span class="idx">06</span> Kontakt</a>
+        </nav>
+        <div class="menu-foot label">
+            <span>polka@polka.eu</span>
+            <span>+48 888 399 665</span>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="doc-head">
+            <div class="hero-head">
+                <p class="label">(01) <span class="sep">/</span> Dokumenty</p>
+                <p class="label">Polska <span class="sep">/</span> EST. 2025 <span class="sep">/</span> <span id="clock">--:--</span></p>
+            </div>
+
+            <div class="section-head">
+                <p class="label">Jawność i rozliczenia</p>
+                <h1 class="section-title">Nasze <span class="accent">sprawozdania</span></h1>
+            </div>
+
+            <p class="doc-lead">Fundacja utrzymuje się ze środków publicznych i prywatnych, więc rozliczamy się z nich otwarcie. W tym miejscu publikujemy sprawozdania finansowe i merytoryczne za kolejne lata obrotowe — w tej samej formie, w jakiej trafiają do Krajowego Rejestru Sądowego.</p>
+
+            <dl class="doc-meta">
+                <div><dt class="label">KRS</dt><dd>0001359566</dd></div>
+                <div><dt class="label">NIP</dt><dd>8971958187</dd></div>
+                <div><dt class="label">REGON</dt><dd>542459345</dd></div>
+                <div><dt class="label">Rok ustanowienia</dt><dd>2025</dd></div>
+            </dl>
+
+            <p class="doc-note" role="note"><strong>Do uzupełnienia.</strong> Pierwszy rok obrotowy fundacji to 2025, a sprawozdania za niego są w przygotowaniu. Sekcje oznaczone jako <em>[do uzupełnienia]</em> zostaną zastąpione konkretnymi dokumentami po ich złożeniu.</p>
+        </section>
+
+        <section id="sprawozdania" class="about doc">
+            <aside class="about-aside">
+                <p class="label sticky-label">(02) <span class="sep">/</span> Spis treści</p>
+                <h2 class="about-heading">Dokumenty</h2>
+                <nav class="doc-toc" aria-label="Spis treści sprawozdań">
+                    <a href="#s1">I &middot; Za rok 2025</a>
+                    <a href="#s2">II &middot; Sprawozdanie finansowe</a>
+                    <a href="#s3">III &middot; Sprawozdanie merytoryczne</a>
+                    <a href="#s4">IV &middot; Terminy i podstawa prawna</a>
+                    <a href="#s5">V &middot; Archiwum</a>
+                </nav>
+            </aside>
+
+            <div class="rows">
+                <article class="row" id="s1" data-reveal>
+                    <p class="row-idx label">I</p>
+                    <h3 class="row-title">Za rok 2025</h3>
+                    <div class="row-body">
+                        <p>
+                            Fundacja Polka została ustanowiona 27 maja 2025 roku, dlatego pierwszy
+                            okres sprawozdawczy jest niepełny i obejmuje czas od ustanowienia fundacji
+                            do 31 grudnia 2025 roku. Sprawozdanie za ten rok jest
+                            w przygotowaniu — opublikujemy je w tym miejscu razem ze sprawozdaniem
+                            finansowym złożonym w Krajowym Rejestrze Sądowym.
+                        </p>
+                        <p class="doc-todo">[do uzupełnienia] Link do pliku PDF ze sprawozdaniem
+                            finansowym i merytorycznym za 2025 rok oraz data jego złożenia.</p>
+                    </div>
+                </article>
+
+                <article class="row" id="s2" data-reveal>
+                    <p class="row-idx label">II</p>
+                    <h3 class="row-title">Sprawozdanie finansowe</h3>
+                    <div class="row-body">
+                        <p>
+                            Sprawozdanie finansowe pokazuje, skąd pochodzą środki fundacji i na co
+                            zostały wydane. Składa się z bilansu, rachunku zysków i strat oraz
+                            informacji dodatkowej.
+                        </p>
+                        <p>
+                            Całość dochodów fundacji przeznaczamy na realizację celów statutowych —
+                            pomoc ludziom i zwierzętom, wspieranie sportu i społeczności lokalnych oraz
+                            budowę darmowych platform cyfrowych. Rozliczenia publikujemy,
+                            żeby każdy mógł sprawdzić, jak wykorzystujemy powierzone nam pieniądze.
+                        </p>
+                        <p class="doc-todo">[do uzupełnienia] Bilans, rachunek zysków i strat oraz
+                            informacja dodatkowa za zakończony rok obrotowy.</p>
+                    </div>
+                </article>
+
+                <article class="row" id="s3" data-reveal>
+                    <p class="row-idx label">III</p>
+                    <h3 class="row-title">Sprawozdanie merytoryczne</h3>
+                    <div class="row-body">
+                        <p>
+                            Sprawozdanie merytoryczne opisuje, co fundacja faktycznie zrobiła w danym
+                            roku: jakie projekty i zbiórki prowadziła, komu pomogła i jakie działania
+                            informacyjne podjęła.
+                        </p>
+                        <p class="doc-todo">[do uzupełnienia] Opis zrealizowanych działań, liczba
+                            odbiorców, informacja o zatrudnieniu i wynagrodzeniach oraz o kontrolach
+                            przeprowadzonych w fundacji.</p>
+                    </div>
+                </article>
+
+                <article class="row" id="s4" data-reveal>
+                    <p class="row-idx label">IV</p>
+                    <h3 class="row-title">Terminy i podstawa prawna</h3>
+                    <div class="row-body">
+                        <p>
+                            Obowiązek sprawozdawczy fundacji wynika z ustawy z dnia 6 kwietnia 1984 r.
+                            o fundacjach oraz z ustawy o rachunkowości. Sprawozdanie finansowe składa
+                            się do Szefa Krajowej Administracji Skarbowej i do Krajowego Rejestru
+                            Sądowego, a sprawozdanie z działalności udostępnia się publicznie.
+                        </p>
+                        <p class="doc-todo">[do uzupełnienia] Daty złożenia poszczególnych dokumentów
+                            oraz numery zgłoszeń w KRS.</p>
+                    </div>
+                </article>
+
+                <article class="row" id="s5" data-reveal>
+                    <p class="row-idx label">V</p>
+                    <h3 class="row-title">Archiwum</h3>
+                    <div class="row-body">
+                        <p>
+                            Wszystkie opublikowane sprawozdania zostają na tej stronie na stałe —
+                            nie usuwamy starszych roczników. Jeżeli potrzebujesz dokumentu, którego
+                            tu jeszcze nie ma, napisz do nas, a prześlemy go mailem.
+                        </p>
+                        <p class="doc-todo">[do uzupełnienia] Lista roczników z linkami do plików,
+                            uzupełniana po każdym zamkniętym roku obrotowym.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="doc-foot">
+            <p class="label">Chcesz zobaczyć dokument, którego jeszcze tu nie ma?</p>
+            <div class="hero-actions">
+                <a href="index.html#contact" class="btn btn-solid" data-magnetic>
+                    Napisz do nas <span class="btn-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="index.html" class="btn btn-line" data-magnetic>
+                    Wróć na stronę główną <span class="btn-arrow" aria-hidden="true">↖</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <p class="label">Fundacja</p>
+                <p>NIP 8971958187</p>
+                <p>KRS 0001359566</p>
+                <p>REGON 542459345</p>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Kontakt</p>
+                <a href="mailto:polka@polka.eu" class="footer-link">polka@polka.eu</a>
+                <a href="tel:+48888399665" class="footer-link">+48 888 399 665</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Dokumenty</p>
+                <a href="statut.html" class="footer-link">Statut</a>
+                <a href="sprawozdania.html" class="footer-link">Sprawozdania</a>
+                <a href="regulamin.html" class="footer-link">Regulamin darowizn</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Social</p>
+                <a href="#instagram" class="footer-link">Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+            <span class="wordmark-top"><span>F</span><span>U</span><span>N</span><span>D</span><span>A</span><span>C</span><span>J</span><span>A</span></span>
+            <span class="wordmark-main">Polka</span>
+        </div>
+
+        <div class="footer-bottom label">
+            <span>© <span id="year">2026</span> Fundacja Polka</span>
+            <span>Działamy w Polsce — dla ludzi, zwierząt i lokalnych społeczności</span>
+            <a href="#main" class="to-top">Na górę <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+    (function () {
+        "use strict";
+
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        var root = document.documentElement;
+
+        /* ---------- clock (Warsaw) ---------- */
+        var clock = document.getElementById("clock");
+        function paintClock() {
+            try {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", {
+                    hour: "2-digit", minute: "2-digit", timeZone: "Europe/Warsaw"
+                });
+            } catch (err) {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+            }
+        }
+        paintClock();
+        window.setInterval(paintClock, 20000);
+
+        var year = document.getElementById("year");
+        if (year) { year.textContent = new Date().getFullYear(); }
+
+        /* ---------- scroll progress + header state ---------- */
+        var bar = document.querySelector(".progress span");
+        var topbar = document.getElementById("topbar");
+        function onScroll() {
+            var y = window.scrollY;
+            var max = document.body.scrollHeight - window.innerHeight;
+            bar.style.transform = "scaleX(" + (max > 0 ? y / max : 0) + ")";
+            topbar.classList.toggle("is-stuck", y > 40);
+        }
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        /* ---------- fullscreen menu ---------- */
+        var menuBtn = document.getElementById("menu-btn");
+        var menu = document.getElementById("menu");
+        function setMenu(open) {
+            document.body.classList.toggle("menu-open", open);
+            menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+            if (open) {
+                menu.hidden = false;
+                window.requestAnimationFrame(function () { menu.classList.add("is-open"); });
+            } else {
+                menu.classList.remove("is-open");
+                window.setTimeout(function () { if (!document.body.classList.contains("menu-open")) { menu.hidden = true; } }, 420);
+            }
+        }
+        menuBtn.addEventListener("click", function () {
+            setMenu(!document.body.classList.contains("menu-open"));
+        });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") { setMenu(false); } });
+
+        /* ---------- custom cursor ---------- */
+        var cursor = document.getElementById("cursor");
+        if (fine && !reduce) {
+            var cx = window.innerWidth / 2, cy = window.innerHeight / 2, tx = cx, ty = cy;
+            window.addEventListener("mousemove", function (e) {
+                if (!root.classList.contains("has-cursor")) {
+                    cx = tx = e.clientX;
+                    cy = ty = e.clientY;
+                    root.classList.add("has-cursor");
+                }
+                tx = e.clientX;
+                ty = e.clientY;
+            });
+            (function loop() {
+                cx += (tx - cx) * 0.18;
+                cy += (ty - cy) * 0.18;
+                cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0) translate(-50%,-50%)";
+                window.requestAnimationFrame(loop);
+            }());
+            document.addEventListener("mouseover", function (e) {
+                var hot = e.target.closest("a, button, .index-row, .copy-card");
+                cursor.classList.toggle("is-hot", !!hot);
+            });
+        }
+
+        /* ---------- magnetic buttons ---------- */
+        if (fine && !reduce) {
+            Array.prototype.forEach.call(document.querySelectorAll("[data-magnetic]"), function (el) {
+                el.addEventListener("mousemove", function (e) {
+                    var r = el.getBoundingClientRect();
+                    var dx = (e.clientX - (r.left + r.width / 2)) * 0.22;
+                    var dy = (e.clientY - (r.top + r.height / 2)) * 0.32;
+                    el.style.transform = "translate(" + dx + "px," + dy + "px)";
+                });
+                el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+            });
+        }
+
+        /* ---------- reveal on scroll ---------- */
+        var revealables = document.querySelectorAll(
+            "[data-reveal], [data-reveal-lines] .line, .section-head, .about-aside, .stat, .collab-body > *, .support-head > *, .copy-card, .projects-foot, .footer-col, .support .btn"
+        );
+        if (reduce || !("IntersectionObserver" in window)) {
+            Array.prototype.forEach.call(revealables, function (el) { el.classList.add("in"); });
+        } else {
+            Array.prototype.forEach.call(revealables, function (el, i) {
+                el.classList.add("rv");
+                el.style.transitionDelay = (i % 4) * 70 + "ms";
+            });
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+            Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
+        }
+
+        /* ---------- counting stats ---------- */
+        var nums = document.querySelectorAll(".stat-num");
+        if (!reduce && "IntersectionObserver" in window) {
+            var numObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) { return; }
+                    var el = entry.target;
+                    numObserver.unobserve(el);
+                    var target = parseInt(el.getAttribute("data-count"), 10);
+                    var suffix = el.getAttribute("data-suffix") || "";
+                    var start = performance.now();
+                    (function step(now) {
+                        var p = Math.min(1, (now - start) / 1100);
+                        var eased = 1 - Math.pow(1 - p, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (p < 1) { window.requestAnimationFrame(step); }
+                    }(start));
+                });
+            }, { threshold: 0.6 });
+            Array.prototype.forEach.call(nums, function (el) { numObserver.observe(el); });
+        }
+
+        /* ---------- copy to clipboard ---------- */
+        var toast = document.getElementById("toast");
+        var toastTimer;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add("is-visible");
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(function () { toast.classList.remove("is-visible"); }, 2400);
+        }
+        function fallbackCopy(text) {
+            var f = document.createElement("textarea");
+            f.value = text;
+            f.setAttribute("readonly", "");
+            f.style.position = "fixed";
+            f.style.opacity = "0";
+            document.body.appendChild(f);
+            f.select();
+            try { document.execCommand("copy"); } catch (err) { /* noop */ }
+            document.body.removeChild(f);
+        }
+        Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (el) {
+            el.addEventListener("click", function () {
+                var value = el.getAttribute("data-copy");
+                function done() {
+                    el.classList.add("is-copied");
+                    window.setTimeout(function () { el.classList.remove("is-copied"); }, 1300);
+                    showToast("Skopiowano: " + value);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(value).then(done, function () { fallbackCopy(value); done(); });
+                } else {
+                    fallbackCopy(value);
+                    done();
+                }
+            });
+        });
+    }());
+    </script>
+</body>
+</html>

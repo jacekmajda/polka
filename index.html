@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fundacja Polka - Tworzymy rozwiązania, które mają znaczenie! Budujemy darmowe platformy cyfrowe bez prowizji, pomagamy ludziom i zwierzętom, wspieramy sport i lokalne inicjatywy." />
+    <meta name="theme-color" content="#FFE9E9" />
+    <link rel="canonical" href="https://polka.eu/" />
+
+    <!-- Social previews: Facebook, Messenger, Instagram (DM links), WhatsApp, LinkedIn, X/Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fundacja Polka" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:url" content="https://polka.eu/" />
+    <meta property="og:title" content="Fundacja Polka — Tworzymy rozwiązania, które mają znaczenie" />
+    <meta property="og:description" content="Pomagamy ludziom i zwierzętom, wspieramy sport i lokalne społeczności oraz budujemy darmowe platformy cyfrowe bez prowizji." />
+    <meta property="og:image" content="https://polka.eu/og/og-default.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fundacja Polka — pomagamy ludziom i zwierzętom, wspieramy sport i lokalne społeczności" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fundacja Polka — Tworzymy rozwiązania, które mają znaczenie" />
+    <meta name="twitter:description" content="Pomagamy ludziom i zwierzętom, wspieramy sport i lokalne społeczności oraz budujemy darmowe platformy cyfrowe bez prowizji." />
+    <meta name="twitter:image" content="https://polka.eu/og/og-default.png" />
+    <meta name="twitter:image:alt" content="Fundacja Polka — pomagamy ludziom i zwierzętom, wspieramy sport i lokalne społeczności" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Fundacja Polka — Tworzymy rozwiązania, które mają znaczenie!</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <a href="#main" class="skip-link">Przejdź do treści</a>
+
+    <!-- TOP BAR -->
+    <header class="topbar" id="topbar">
+        <a href="index.html" class="brand" aria-label="Fundacja Polka — strona główna">
+            <span class="visually-hidden">Fundacja Polka</span>
+            <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <rect class="brand-mark-tile" width="128" height="128" rx="28" />
+                <path class="brand-mark-p" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z" />
+                <circle class="brand-mark-dot" cx="94.64" cy="85.7" r="9.3" />
+            </svg>
+        </a>
+
+        <p class="topbar-meta label">KRS&nbsp;0001359566 <span class="sep">/</span> NIP&nbsp;8971958187</p>
+
+        <nav class="topnav" aria-label="Nawigacja główna">
+            <a href="#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="#projects"><span class="idx">02</span> Projekty</a>
+            <a href="#support"><span class="idx">03</span> Wesprzyj</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="#contact" class="topnav-cta">Kontakt <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="menu-btn-label">Menu</span>
+            <span class="menu-btn-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+    <div class="menu" id="menu" hidden>
+        <nav class="menu-nav" aria-label="Menu">
+            <a href="#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="#projects"><span class="idx">02</span> Projekty</a>
+            <a href="#support"><span class="idx">03</span> Wesprzyj nas</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="#contact"><span class="idx">06</span> Kontakt</a>
+        </nav>
+        <div class="menu-foot label">
+            <span>polka@polka.eu</span>
+            <span>+48 888 399 665</span>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-head">
+                <p class="label">(01) <span class="sep">/</span> Organizacja non-profit</p>
+                <p class="label">Polska <span class="sep">/</span> EST. 2025 <span class="sep">/</span> <span id="clock">--:--</span></p>
+            </div>
+
+            <h1 class="wordmark hero-wordmark">
+                <span class="visually-hidden">Fundacja Polka</span>
+                <span class="wordmark-top" aria-hidden="true"><span>F</span><span>U</span><span>N</span><span>D</span><span>A</span><span>C</span><span>J</span><span>A</span></span>
+                <span class="wordmark-main" aria-hidden="true">Polka</span>
+            </h1>
+
+            <div class="hero-foot">
+                <p class="hero-claim">
+                    Tworzymy rozwiązania,<br />
+                    <span class="accent">które mają znaczenie.</span>
+                </p>
+                <p class="hero-note">
+                    Budujemy darmowe platformy cyfrowe bez prowizji, pomagamy ludziom
+                    i zwierzętom, wspieramy sport oraz lokalne inicjatywy.
+                </p>
+                <div class="hero-actions">
+                    <a href="statut.html" class="btn btn-solid" data-magnetic>
+                        Nasz statut <span class="btn-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a href="#about" class="btn btn-line" data-magnetic>
+                        Poznaj fundację <span class="btn-arrow" aria-hidden="true">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="scroll-cue label" aria-hidden="true">Przewiń <span>↓</span></p>
+        </section>
+
+        <!-- STATEMENT -->
+        <section class="statement-section">
+            <p class="label sticky-label">(02) <span class="sep">/</span> Manifest</p>
+            <h2 class="statement" data-reveal-lines>
+                <span class="line"><span>Pomagamy tam,</span></span>
+                <span class="line"><span class="accent">gdzie żyjemy.</span></span>
+                <span class="line"><span>Ludziom, zwierzętom</span></span>
+                <span class="line"><span>i lokalnym</span></span>
+                <span class="line"><span class="accent">społecznościom.</span></span>
+            </h2>
+            <div class="statement-foot">
+                <p class="label">Pomoc ludziom i&nbsp;zwierzętom, sport, społeczności lokalne</p>
+                <p class="label">Technologia bez prowizji: 0%</p>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats" aria-label="Liczby">
+            <div class="stat">
+                <span class="stat-num" data-count="0" data-suffix="%">0%</span>
+                <span class="label">prowizji na naszych platformach</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+                <span class="label">dochodów przeznaczamy na cele statutowe</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-count="4" data-suffix="">4</span>
+                <span class="label">obszary działania poza technologią</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-count="5" data-suffix="">5</span>
+                <span class="label">projektów w przygotowaniu</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <aside class="about-aside">
+                <p class="label sticky-label">(03) <span class="sep">/</span> O fundacji</p>
+                <h2 class="about-heading">Miło Cię poznać</h2>
+                <p class="about-intro">
+                    Od początku działamy na wielu polach. Pomagamy ludziom i zwierzętom,
+                    wspieramy sport i lokalne społeczności, a do tego budujemy technologię, która służy wszystkim.
+                </p>
+            </aside>
+
+            <div class="rows">
+                <article class="row" data-reveal>
+                    <p class="row-idx label">01</p>
+                    <h3 class="row-title">Kim jesteśmy?</h3>
+                    <div class="row-body">
+                        <p>
+                            Fundacja powstała z przekonania, że realną zmianę można wprowadzać na wiele
+                            sposobów. Od samego początku pomagamy ludziom i zwierzętom, wspieramy sport
+                            i angażujemy się w inicjatywy lokalnych społeczności.
+                        </p>
+                        <p>
+                            Wykorzystujemy też nasze doświadczenie w IT: tworzymy darmowe aplikacje
+                            internetowe, które eliminują wysokie prowizje pośredników i zwiększają
+                            dostępność cyfrową dla polskich przedsiębiorców.
+                        </p>
+                        <p>
+                            Publikujemy raporty z wykorzystania środków i postępów w projektach.
+                            Każda złotówka dotacji jest rozliczana zgodnie ze statutem fundacji.
+                        </p>
+                        <a href="sprawozdania.html" class="link-arrow">Zobacz sprawozdania <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">02</p>
+                    <h3 class="row-title">Nasza misja</h3>
+                    <div class="row-body">
+                        <p>
+                            Chcemy, żeby pomoc była blisko — tam, gdzie żyjemy. Wspieramy ludzi w trudnej
+                            sytuacji i zwierzęta w potrzebie, a nasz pierwszy projekt to zbiórka na
+                            wrocławskie zwierzaki. Dbamy też o sport i aktywny wypoczynek — planujemy m.in.
+                            legalny tor do jazdy enduro.
+                        </p>
+                        <p>
+                            Działamy również w obszarze technologii. Polscy przedsiębiorcy tracą miliony
+                            złotych rocznie na prowizjach dla globalnych platform — do rezerwacji noclegów
+                            czy zamawiania jedzenia, które pobierają aż do 37% od przedsiębiorcy. Te pieniądze
+                            uciekają z lokalnej gospodarki.
+                        </p>
+                        <p>
+                            Dlatego tworzymy alternatywne, w pełni funkcjonalne platformy cyfrowe,
+                            finansowane ze środków publicznych i sponsoringu.
+                            Bez prowizji. Bez ukrytych kosztów.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">03</p>
+                    <h3 class="row-title">Obszary działania</h3>
+                    <div class="row-body">
+                        <p>Działamy wszędzie tam, gdzie możemy realnie pomóc:</p>
+                        <dl class="deflist">
+                            <div>
+                                <dt>Pomoc ludziom</dt>
+                                <dd>Pomagamy rodzinom i osobom w trudnej sytuacji życiowej, osobom z niepełnosprawnościami, seniorom oraz dzieciom i młodzieży.</dd>
+                            </div>
+                            <div>
+                                <dt>Pomoc zwierzętom</dt>
+                                <dd>Wspieramy ochronę zwierząt i działania na rzecz zwierząt potrzebujących pomocy.</dd>
+                            </div>
+                            <div>
+                                <dt>Sport</dt>
+                                <dd>Wspieramy i upowszechniamy kulturę fizyczną oraz sportowe inicjatywy dzieci, młodzieży i dorosłych.</dd>
+                            </div>
+                            <div>
+                                <dt>Społeczności lokalne</dt>
+                                <dd>Organizujemy i wspieramy wydarzenia kulturalne, edukacyjne i turystyczne w regionie.</dd>
+                            </div>
+                        </dl>
+                        <a href="statut.html#r2" class="link-arrow">Cele w statucie fundacji <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">04</p>
+                    <h3 class="row-title">Dla kogo działamy?</h3>
+                    <div class="row-body">
+                        <dl class="deflist">
+                            <div>
+                                <dt>Dla ludzi w potrzebie</dt>
+                                <dd>Wspieramy osoby i rodziny w trudnej sytuacji życiowej oraz zagrożone wykluczeniem społecznym.</dd>
+                            </div>
+                            <div>
+                                <dt>Dla zwierząt i sportowców</dt>
+                                <dd>Wspieramy ochronę zwierząt oraz rozwój sportu i aktywności fizycznej.</dd>
+                            </div>
+                            <div>
+                                <dt>Dla przedsiębiorców</dt>
+                                <dd>Zachowują 100% swoich przychodów, bez odliczania prowizji dla pośredników.</dd>
+                            </div>
+                            <div>
+                                <dt>Dla konsumentów</dt>
+                                <dd>Większy wybór ofert i niższe ceny dzięki eliminacji kosztów pośrednictwa.</dd>
+                            </div>
+                            <div>
+                                <dt>Dla polskiej gospodarki</dt>
+                                <dd>Każda złotówka zostaje w obiegu lokalnym, wspierając rozwój i konkurencyjność firm.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">05</p>
+                    <h3 class="row-title">Nasze doświadczenie w IT</h3>
+                    <div class="row-body">
+                        <p>
+                            Łączymy doświadczenie w tworzeniu skalowalnych aplikacji internetowych
+                            z wrażliwością na realne potrzeby użytkowników. Specjalizujemy się
+                            w rozwiązaniach dostępnych cyfrowo, bezpiecznych i intuicyjnych,
+                            bo technologia powinna ułatwiać życie, nie je komplikować.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">06</p>
+                    <h3 class="row-title">Co tworzymy?</h3>
+                    <div class="row-body">
+                        <p>Rozwijamy platformy, które zastępują monopolistyczne rozwiązania korporacji:</p>
+                        <ul class="tags">
+                            <li>Rezerwacje noclegów</li>
+                            <li>Zamawianie jedzenia</li>
+                            <li>Przejazdy taxi</li>
+                            <li>Usługi lokalne</li>
+                        </ul>
+                        <p>
+                            Każdy projekt budujemy z myślą o dostępności cyfrowej, wsparciu MŚP
+                            i przejrzystości działania.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">07</p>
+                    <h3 class="row-title">Nasz zespół</h3>
+                    <div class="row-body">
+                        <p>
+                            Fundację tworzą ludzie, którym zależy na realnej zmianie. Łączymy wieloletnie
+                            doświadczenie w branży IT z zaangażowaniem w pomoc ludziom i zwierzętom, sport
+                            i działania lokalne. Dzielimy się nie tylko wiedzą, ale i wartościami.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="section-head">
+                <p class="label">(04) <span class="sep">/</span> Nasze projekty</p>
+                <h2 class="section-title">Akcje <span class="accent">w trakcie</span></h2>
+            </div>
+
+            <!-- FUNDRAISER: amounts live in zbiorka.js -->
+            <article class="fundraiser" id="zbiorka" data-reveal data-fundraiser>
+                <div class="fundraiser-head">
+                    <p class="label">Zbiórka <span class="sep">/</span> Do Mikołajek, 6 grudnia</p>
+                    <h3 class="fundraiser-title">Wrocławskie zwierzaki <span class="accent">w&nbsp;potrzebie</span></h3>
+                    <a href="zwierzaki.html" class="link-arrow">Więcej o zbiórce <span aria-hidden="true">↗</span></a>
+                </div>
+
+                <div class="fundraiser-amounts">
+                    <p><span class="fundraiser-raised" data-fr="raised">0 zł</span> <span class="fundraiser-goal">z <span data-fr="goal">5000 zł</span></span></p>
+                    <p class="label" data-fr="percent">0%</p>
+                </div>
+
+                <div class="fundraiser-bar" role="progressbar" aria-label="Postęp zbiórki" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="0" aria-valuetext="Zebrano 0 zł z 5000 zł">
+                    <span></span>
+                </div>
+
+                <p class="label" data-fr="left">Zbiórka trwa do 6 grudnia</p>
+
+                <div class="fundraiser-pay">
+                    <button type="button" class="copy-card copy-card-light copy-card-account" data-copy="16 1600 1462 1786 9193 5000 0001">
+                        <span class="label">Przelew na konto</span>
+                        <span class="copy-value">16 1600 1462 1786 9193 5000 0001</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                    <button type="button" class="copy-card copy-card-light" data-copy="+48 888 399 665">
+                        <span class="label">BLIK na telefon</span>
+                        <span class="copy-value">+48 888 399 665</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                    <button type="button" class="copy-card copy-card-light" data-copy="Wrocławskie zwierzaki">
+                        <span class="label">Tytuł wpłaty</span>
+                        <span class="copy-value">Wrocławskie zwierzaki</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                </div>
+
+                <p class="fundraiser-note">Wpłacając darowiznę, akceptujesz <a href="regulamin.html">regulamin darowizn</a>. Darowizny są bezzwrotne.</p>
+            </article>
+
+            <div class="section-head">
+                <p class="label">Kolejne projekty</p>
+                <h2 class="section-title">Już <span class="accent">wkrótce</span></h2>
+            </div>
+
+            <ul class="index" id="index">
+                <li class="index-row" data-reveal>
+                    <span class="index-num label">01</span>
+                    <span class="index-name">Noclegi</span>
+                    <span class="index-desc">Rezerwacje bez prowizji dla obiektów i gości</span>
+                    <span class="index-status label">W przygotowaniu</span>
+                </li>
+                <li class="index-row" data-reveal>
+                    <span class="index-num label">02</span>
+                    <span class="index-name">Jedzenie</span>
+                    <span class="index-desc">Zamówienia bezpośrednio od restauracji</span>
+                    <span class="index-status label">W przygotowaniu</span>
+                </li>
+                <li class="index-row" data-reveal>
+                    <span class="index-num label">03</span>
+                    <span class="index-name">Taxi</span>
+                    <span class="index-desc">Przejazdy bez pośrednika między kierowcą a pasażerem</span>
+                    <span class="index-status label">W przygotowaniu</span>
+                </li>
+                <li class="index-row" data-reveal>
+                    <span class="index-num label">04</span>
+                    <span class="index-name">Usługi lokalne</span>
+                    <span class="index-desc">Fryzjerzy, kosmetyczki i lokalni rzemieślnicy</span>
+                    <span class="index-status label">W przygotowaniu</span>
+                </li>
+                <li class="index-row" data-reveal>
+                    <span class="index-num label">05</span>
+                    <span class="index-name">Tor Enduro</span>
+                    <span class="index-desc">Legalne miejsce do jazdy w terenie</span>
+                    <span class="index-status label">W przygotowaniu</span>
+                </li>
+            </ul>
+
+            <div class="projects-foot">
+                <div class="projects-cta">
+                    <p class="projects-note">Kolejne projekty są już w drodze. Chcesz wiedzieć pierwszy?</p>
+                    <a href="mailto:polka@polka.eu" class="btn btn-solid" data-magnetic>
+                        Napisz do nas <span class="btn-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLAB -->
+        <section class="collab">
+            <figure class="collab-figure" aria-hidden="true">
+                <svg class="fig-svg fig-bulb" aria-hidden="true" viewBox="0 0 349 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M248.419 99.5899C228.615 79.3746 202.393 68.2778 174.5 68.2778H173.738C118.147 68.6795 71.4471 115.447 69.6495 172.517C68.6334 204.844 81.5687 235.633 105.143 257.004C118.362 268.994 127.683 284.72 132.089 302.485C133.017 306.251 130.809 310.077 127.145 311.031C126.588 311.182 126.041 311.222 125.494 311.232C125.328 311.232 125.172 311.242 125.006 311.232C124.84 311.222 124.683 311.182 124.517 311.162V318.242H151.541V268.241C151.052 267.869 150.564 267.488 150.095 267.096L149.763 266.835C149.411 266.554 149.059 266.263 148.717 265.961C148.571 265.841 148.424 265.72 148.287 265.59C120.844 240.474 106.775 216.674 106.472 194.841C106.15 171.252 124.556 151.79 147.506 151.459C157.715 151.338 167.368 154.943 174.979 161.591C182.404 154.722 191.969 150.816 202.159 150.665H202.755C225.44 150.665 244.042 169.464 244.364 192.843C244.423 197.031 243.974 201.359 243.026 205.717C242.205 209.503 238.551 211.893 234.858 211.05C234.722 211.02 234.604 210.969 234.477 210.929C233.96 212.636 233.344 214.494 232.65 216.443C234.751 217.648 236.177 219.947 236.177 222.598C236.177 226.475 233.119 229.628 229.338 229.628C228.498 229.628 227.697 229.467 226.955 229.176C225.831 231.175 224.61 233.073 223.281 234.79C225.469 237.311 225.636 241.157 223.516 243.868C218.22 250.667 211.821 257.696 204.503 264.776C204.376 264.907 204.23 265.037 204.083 265.158C203.751 265.479 203.409 265.771 203.057 266.072L202.774 266.313C202.149 266.855 201.572 267.357 200.967 267.819C200.468 268.201 199.97 268.562 199.462 268.914C199.403 268.954 199.355 268.984 199.306 269.024V318.242H214.41C216.188 294.733 226.847 272.589 244.257 256.642C266.591 236.186 279.409 206.832 279.409 176.112C279.409 147.16 268.398 119.986 248.419 99.5899ZM164.642 101.237C149.03 103.406 134.727 110.616 123.267 122.085C119.749 125.61 116.564 129.486 113.819 133.593C112.49 135.582 110.351 136.646 108.172 136.646C106.834 136.646 105.485 136.244 104.303 135.401C101.196 133.202 100.405 128.833 102.545 125.63C105.808 120.759 109.569 116.18 113.721 112.012C127.302 98.4249 144.272 89.8789 162.805 87.298C166.557 86.7859 169.996 89.4772 170.504 93.3234C171.012 97.1696 168.384 100.715 164.642 101.237ZM196.863 96.2357C196.316 99.6802 193.414 102.121 190.122 102.121C189.761 102.121 189.379 102.09 188.998 102.03L188.676 101.97C184.944 101.337 182.433 97.7119 183.049 93.8858C183.674 90.0496 187.181 87.4587 190.913 88.1014L191.236 88.1516C194.958 88.7843 197.479 92.4096 196.863 96.2357Z" fill="#DBDBEF"/>
+                        <path d="M198.407 394.222C195.427 404.897 185.833 412.74 174.5 412.74C163.167 412.74 153.573 404.897 150.593 394.222H198.407Z" fill="#F57070"/>
+                        <path d="M172.673 349.202H226.945V332.301H123.902V380.163H226.945V363.262H172.673C168.902 363.262 165.834 360.108 165.834 356.232C165.834 352.346 168.902 349.202 172.673 349.202ZM146.675 363.262H136.417C132.646 363.262 129.578 360.108 129.578 356.232C129.578 352.346 132.646 349.202 136.417 349.202H146.675C150.456 349.202 153.514 352.346 153.514 356.232C153.514 360.108 150.456 363.262 146.675 363.262Z" fill="#FFDE83"/>
+                        <path d="M258.052 89.6175C235.464 66.5603 205.49 53.9772 173.64 54.2182C142.982 54.4392 113.927 66.7611 91.8174 88.8945C69.6984 111.038 56.978 140.572 55.9815 172.065C54.8286 208.589 69.4444 243.396 96.0967 267.548C107.244 277.66 115.109 290.936 118.831 305.96C119.535 308.802 121.84 310.78 124.517 311.162C124.683 311.182 124.84 311.222 125.006 311.232C125.172 311.242 125.328 311.232 125.494 311.232C126.041 311.222 126.588 311.182 127.145 311.031C130.809 310.077 133.017 306.251 132.089 302.485C127.683 284.72 118.362 268.994 105.144 257.003C81.5688 235.633 68.6335 204.843 69.6496 172.517C71.4472 115.446 118.147 68.6792 173.738 68.2775H174.5C202.393 68.2775 228.615 79.3743 248.419 99.5895C268.398 119.986 279.409 147.16 279.409 176.112C279.409 206.832 266.591 236.185 244.257 256.642C226.847 272.589 216.188 294.732 214.41 318.241H199.306V269.024C199.355 268.984 199.403 268.954 199.462 268.913C199.97 268.562 200.468 268.2 200.967 267.819C201.572 267.357 202.149 266.855 202.774 266.312L203.057 266.071C203.409 265.77 203.751 265.479 204.083 265.158C204.23 265.037 204.376 264.907 204.503 264.776C211.821 257.696 218.22 250.667 223.516 243.868C225.636 241.156 225.47 237.31 223.281 234.79C223.174 234.669 223.066 234.549 222.949 234.428C222.832 234.318 222.714 234.207 222.587 234.097C222.539 234.067 222.509 234.026 222.46 233.986C219.51 231.556 215.201 232.048 212.847 235.071C207.972 241.327 202.051 247.835 195.251 254.432C195.134 254.533 195.017 254.633 194.919 254.734C194.714 254.914 194.509 255.085 194.304 255.266L193.913 255.607C193.522 255.949 193.141 256.28 192.74 256.592C192.428 256.833 192.096 257.063 191.763 257.294C191.763 257.294 191.685 257.355 191.675 257.355C191.255 257.646 190.835 257.937 190.415 258.198C190.063 258.419 189.702 258.63 189.34 258.831C188.881 259.092 188.412 259.333 187.953 259.564C187.601 259.735 187.26 259.895 186.898 260.056C186.38 260.277 185.872 260.478 185.364 260.659L185.179 260.729C184.905 260.829 184.641 260.93 184.358 261.02C183.801 261.201 183.185 261.362 182.668 261.492L182.218 261.613C182.062 261.653 181.906 261.693 181.74 261.733C181.231 261.844 180.723 261.924 180.215 261.994C177.04 262.466 174.725 265.117 174.422 268.241C174.402 268.411 174.363 268.572 174.363 268.743C174.353 268.903 174.353 269.074 174.363 269.245C174.373 269.476 174.393 269.717 174.422 269.958C174.92 273.463 177.841 275.983 181.183 275.983C181.515 275.983 181.837 275.963 182.169 275.913C183.088 275.772 183.85 275.642 184.543 275.491C184.905 275.411 185.266 275.32 185.618 275.23L185.628 275.22V318.241H165.219V264.455C165.219 264.364 165.209 264.294 165.199 264.214C165.199 264.123 165.199 264.043 165.189 263.963C165.18 263.802 165.16 263.641 165.14 263.481C165.131 263.43 165.131 263.38 165.121 263.32C165.092 263.139 165.053 262.958 165.013 262.778C165.004 262.747 164.994 262.717 164.994 262.687C164.945 262.496 164.886 262.306 164.818 262.115C164.818 262.105 164.808 262.085 164.799 262.065C164.73 261.874 164.662 261.683 164.574 261.492L164.545 261.432C164.457 261.251 164.369 261.08 164.271 260.91C164.261 260.88 164.242 260.849 164.222 260.819C164.124 260.659 164.027 260.498 163.919 260.347C163.89 260.307 163.87 260.277 163.841 260.237C163.734 260.086 163.626 259.956 163.509 259.815C163.48 259.775 163.44 259.745 163.411 259.705C163.294 259.574 163.167 259.444 163.04 259.313C163.001 259.283 162.972 259.253 162.942 259.223C162.796 259.092 162.649 258.972 162.503 258.851C162.473 258.831 162.454 258.821 162.434 258.801C162.258 258.67 162.082 258.55 161.907 258.439C161.897 258.429 161.887 258.429 161.877 258.419C161.555 258.218 161.223 258.007 160.891 257.787L160.783 257.716C160.461 257.505 160.138 257.294 159.835 257.074C159.415 256.772 159.025 256.441 158.585 256.079L158.223 255.788C158.018 255.617 157.803 255.457 157.618 255.276C157.5 255.176 157.383 255.085 157.266 254.985C132.88 232.641 120.394 212.345 120.15 194.65C119.935 178.804 132.294 165.738 147.701 165.518C156.308 165.387 164.359 169.283 169.801 176.193C171.12 177.87 173.132 178.864 175.213 178.793C177.314 178.763 179.278 177.749 180.548 176.032C185.804 168.972 193.747 164.855 202.354 164.724C217.771 164.533 230.472 177.207 230.687 193.044C230.736 196.137 230.394 199.37 229.68 202.654C228.967 205.968 230.657 209.262 233.559 210.598C233.715 210.658 233.862 210.728 234.018 210.788C234.165 210.849 234.321 210.889 234.477 210.929C234.604 210.969 234.722 211.019 234.858 211.049C238.551 211.893 242.205 209.503 243.026 205.717C243.974 201.359 244.423 197.03 244.365 192.843C244.042 169.464 225.44 150.665 202.755 150.665H202.159C191.969 150.816 182.404 154.722 174.979 161.591C167.368 154.943 157.715 151.338 147.506 151.458C124.556 151.79 106.15 171.252 106.472 194.841C106.775 216.673 120.844 240.474 148.287 265.589C148.424 265.72 148.571 265.84 148.717 265.961C149.059 266.262 149.411 266.553 149.763 266.835L150.095 267.096C150.564 267.487 151.052 267.869 151.541 268.241V318.241H117.063C113.282 318.241 110.224 321.385 110.224 325.271V387.192C110.224 391.068 113.282 394.222 117.063 394.222H136.583C139.817 412.72 155.586 426.799 174.5 426.799C193.415 426.799 209.183 412.72 212.417 394.222H233.784C237.555 394.222 240.623 391.068 240.623 387.192V325.271C240.623 321.385 237.555 318.241 233.784 318.241H228.156C229.905 298.739 238.854 280.422 253.353 267.146C278.608 244.018 293.087 210.839 293.087 176.112C293.087 143.384 280.64 112.675 258.052 89.6175ZM174.5 412.74C163.167 412.74 153.573 404.897 150.593 394.222H198.407C195.427 404.897 185.833 412.74 174.5 412.74ZM226.945 349.202H172.673C168.902 349.202 165.834 352.345 165.834 356.232C165.834 360.108 168.902 363.261 172.673 363.261H226.945V380.163H123.902V332.301H226.945V349.202Z" fill="#48446D"/>
+                        <path d="M196.863 96.2358C196.316 99.6803 193.414 102.121 190.122 102.121C189.761 102.121 189.379 102.091 188.998 102.03L188.676 101.97C184.944 101.337 182.433 97.712 183.049 93.8859C183.674 90.0497 187.181 87.4588 190.913 88.1015L191.236 88.1517C194.958 88.7844 197.479 92.4097 196.863 96.2358Z" fill="#48446D"/>
+                        <path d="M164.642 101.237C149.03 103.406 134.727 110.616 123.267 122.085C119.75 125.61 116.565 129.486 113.819 133.593C112.491 135.582 110.351 136.646 108.172 136.646C106.834 136.646 105.486 136.244 104.303 135.401C101.197 133.202 100.405 128.833 102.545 125.63C105.808 120.759 109.569 116.18 113.722 112.012C127.302 98.425 144.272 89.879 162.806 87.2981C166.557 86.7859 169.996 89.4773 170.504 93.3235C171.012 97.1697 168.384 100.715 164.642 101.237Z" fill="#48446D"/>
+                        <path d="M136.417 363.261H146.675C150.456 363.261 153.514 360.118 153.514 356.232C153.514 352.345 150.456 349.202 146.675 349.202H136.417C132.636 349.202 129.578 352.345 129.578 356.232C129.578 360.118 132.646 363.261 136.417 363.261Z" fill="#48446D"/>
+                        <path d="M236.177 222.599C236.177 226.475 233.119 229.628 229.338 229.628C228.498 229.628 227.697 229.468 226.954 229.176C226.652 229.066 226.349 228.935 226.075 228.775C223.945 227.58 222.49 225.26 222.49 222.599C222.49 218.712 225.548 215.569 229.329 215.569H229.338C230.188 215.569 231.009 215.74 231.761 216.031C232.064 216.152 232.367 216.282 232.65 216.443C234.751 217.648 236.177 219.948 236.177 222.599Z" fill="#48446D"/>
+                        <path d="M181.339 26.3812V7.02964C181.339 3.14325 178.281 0 174.5 0C170.719 0 167.661 3.14325 167.661 7.02964V26.3812C167.661 30.2576 170.719 33.4109 174.5 33.4109C178.281 33.4109 181.339 30.2576 181.339 26.3812Z" fill="#48446D"/>
+                        <path d="M288.212 52.5315L274.905 66.2192C272.238 68.9608 272.238 73.4095 274.905 76.1611C276.244 77.5269 277.992 78.2198 279.741 78.2198C281.49 78.2198 283.239 77.5269 284.577 76.1611L297.884 62.4734C300.561 59.7319 300.561 55.2831 297.884 52.5315C295.217 49.79 290.889 49.79 288.212 52.5315Z" fill="#48446D"/>
+                        <path d="M342.161 172.337H323.335C319.554 172.337 316.496 175.48 316.496 179.366C316.496 183.243 319.554 186.396 323.335 186.396H342.161C345.932 186.396 349 183.243 349 179.366C349 175.48 345.932 172.337 342.161 172.337Z" fill="#48446D"/>
+                        <path d="M284.577 282.571C281.91 279.819 277.572 279.819 274.905 282.571C272.238 285.313 272.238 289.761 274.905 292.513L288.212 306.191C289.55 307.566 291.299 308.249 293.048 308.249C294.806 308.249 296.555 307.566 297.884 306.191C300.561 303.449 300.561 298.99 297.884 296.249L284.577 282.571Z" fill="#48446D"/>
+                        <path d="M64.4227 282.571L51.1161 296.249C48.4392 298.99 48.4392 303.449 51.1161 306.191C52.4448 307.566 54.1936 308.249 55.9522 308.249C57.701 308.249 59.4498 307.566 60.7883 306.191L74.0949 292.513C76.7621 289.761 76.7621 285.313 74.0949 282.571C71.4277 279.819 67.0899 279.819 64.4227 282.571Z" fill="#48446D"/>
+                        <path d="M25.6655 172.337H6.83892C3.06775 172.337 0 175.48 0 179.366C0 183.243 3.06775 186.396 6.83892 186.396H25.6655C29.4465 186.396 32.5044 183.243 32.5044 179.366C32.5044 175.48 29.4465 172.337 25.6655 172.337Z" fill="#48446D"/>
+                        <path d="M64.4227 76.1611C65.7612 77.5269 67.51 78.2198 69.2588 78.2198C71.0076 78.2198 72.7564 77.5269 74.0949 76.1611C76.7621 73.4095 76.7621 68.9608 74.0949 66.2192L60.7883 52.5315C58.1113 49.79 53.7833 49.79 51.1161 52.5315C48.4392 55.2831 48.4392 59.7319 51.1161 62.4734L64.4227 76.1611Z" fill="#48446D"/>
+                        <path d="M185.628 275.22V318.242H165.219V266.453C167.886 267.197 170.993 267.849 174.422 268.241C174.402 268.412 174.363 268.572 174.363 268.743C174.354 268.904 174.354 269.074 174.363 269.245C174.373 269.476 174.393 269.717 174.422 269.958C174.92 273.463 177.841 275.984 181.183 275.984C181.515 275.984 181.837 275.963 182.17 275.913C183.088 275.773 183.85 275.642 184.544 275.491C184.905 275.411 185.267 275.321 185.618 275.23L185.628 275.22Z" fill="#DBDBEF"/>
+                        <path d="M234.478 210.929C233.96 212.637 233.344 214.494 232.651 216.443C232.367 216.282 232.064 216.151 231.761 216.031C231.009 215.74 230.189 215.569 229.339 215.569H229.329C225.548 215.569 222.49 218.712 222.49 222.599C222.49 225.26 223.946 227.58 226.075 228.775C226.349 228.935 226.652 229.066 226.955 229.176C225.831 231.175 224.61 233.073 223.281 234.79C223.174 234.669 223.066 234.549 222.949 234.428C222.832 234.318 222.715 234.207 222.588 234.097C222.539 234.067 222.509 234.027 222.461 233.987C219.51 231.556 215.201 232.048 212.847 235.071C207.972 241.328 202.051 247.835 195.251 254.433C195.134 254.533 195.017 254.634 194.919 254.734C194.714 254.915 194.509 255.086 194.304 255.266L193.913 255.608C193.522 255.949 193.141 256.281 192.741 256.592C192.428 256.833 192.096 257.064 191.764 257.295C191.764 257.295 191.685 257.355 191.676 257.355C191.255 257.646 190.835 257.938 190.415 258.199C190.064 258.42 189.702 258.63 189.341 258.831C188.881 259.092 188.412 259.333 187.953 259.564C187.602 259.735 187.26 259.896 186.898 260.056C186.38 260.277 185.872 260.478 185.364 260.659L185.179 260.729C184.905 260.83 184.641 260.93 184.358 261.021C183.801 261.201 183.186 261.362 182.668 261.493L182.218 261.613C182.062 261.653 181.906 261.693 181.74 261.734C181.232 261.844 180.724 261.924 180.216 261.995C177.04 262.467 174.725 265.118 174.422 268.241C170.993 267.849 167.886 267.197 165.219 266.453V264.455C165.219 264.365 165.209 264.294 165.199 264.214C165.199 264.124 165.199 264.043 165.189 263.963C165.18 263.802 165.16 263.642 165.141 263.481C165.131 263.431 165.131 263.38 165.121 263.32C165.092 263.139 165.053 262.959 165.014 262.778C165.004 262.748 164.994 262.718 164.994 262.688C164.945 262.497 164.887 262.306 164.818 262.115C164.818 262.105 164.808 262.085 164.799 262.065C164.73 261.874 164.662 261.683 164.574 261.493L164.545 261.432C164.457 261.252 164.369 261.081 164.271 260.91C164.261 260.88 164.242 260.85 164.222 260.82C164.125 260.659 164.027 260.498 163.919 260.348C163.89 260.308 163.87 260.277 163.841 260.237C163.734 260.087 163.626 259.956 163.509 259.815C163.48 259.775 163.441 259.745 163.411 259.705C163.294 259.574 163.167 259.444 163.04 259.313C163.001 259.283 162.972 259.253 162.942 259.223C162.796 259.092 162.649 258.972 162.503 258.851C162.473 258.831 162.454 258.821 162.434 258.801C162.258 258.671 162.083 258.55 161.907 258.44C161.897 258.43 161.887 258.43 161.877 258.42C161.555 258.219 161.223 258.008 160.891 257.787L160.783 257.717C160.461 257.506 160.138 257.295 159.836 257.074C159.415 256.773 159.025 256.441 158.585 256.08L158.223 255.788C158.018 255.618 157.803 255.457 157.618 255.276C157.501 255.176 157.383 255.086 157.266 254.985C132.88 232.641 120.394 212.345 120.15 194.651C119.935 178.804 132.294 165.739 147.701 165.518C156.309 165.387 164.359 169.284 169.801 176.193C171.12 177.87 173.132 178.864 175.213 178.794C177.314 178.764 179.278 177.749 180.548 176.032C185.804 168.972 193.747 164.855 202.354 164.725C217.771 164.534 230.472 177.207 230.687 193.044C230.736 196.137 230.394 199.371 229.68 202.654C228.967 205.968 230.657 209.262 233.559 210.598C233.715 210.658 233.862 210.728 234.018 210.789C234.165 210.849 234.321 210.889 234.478 210.929Z" fill="#F57070"/>
+                        </svg>
+            </figure>
+            <div class="collab-body">
+                <p class="label">(05) <span class="sep">/</span> Współpraca</p>
+                <h2 class="collab-title">Potrzebujesz zespołu do&nbsp;realizacji projektu</h2>
+                <p class="collab-text">
+                    Jeśli masz pomysł na aplikację, która rozwiązuje realny problem społeczny — pomożemy.
+                    Od analizy koncepcji, przez rozwój techniczny, aż po publiczne uruchomienie produktu.
+                </p>
+                <ul class="checks">
+                    <li>eliminują monopole i wysokie prowizje platform cyfrowych</li>
+                    <li>zwiększają dostępność usług dla wykluczonych grup</li>
+                    <li>wspierają lokalną przedsiębiorczość i gospodarkę</li>
+                </ul>
+                <a href="mailto:polka@polka.eu" class="mail-link">
+                    polka@polka.eu <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section id="support" class="support">
+            <div class="support-head">
+                <p class="label label-invert">(06) <span class="sep">/</span> Darowizny</p>
+                <h2 class="support-title">Wesprzyj nas</h2>
+                <p class="support-sub">Jeśli podoba ci się to, co robimy — każda złotówka pracuje na kolejne platformy, pomoc ludziom i zwierzętom oraz wsparcie sportu.</p>
+            </div>
+
+            <div class="support-grid">
+                <button type="button" class="copy-card copy-card-account" data-copy="16 1600 1462 1786 9193 5000 0001">
+                    <span class="label label-invert">Numer konta</span>
+                    <span class="copy-value">16 1600 1462 1786 9193 5000 0001</span>
+                    <span class="copy-hint label label-invert">Kliknij, aby skopiować</span>
+                </button>
+
+                <button type="button" class="copy-card" data-copy="+48 888 399 665">
+                    <span class="label label-invert">BLIK / telefon</span>
+                    <span class="copy-value">+48 888 399 665</span>
+                    <span class="copy-hint label label-invert">Kliknij, aby skopiować</span>
+                </button>
+
+                <figure class="support-figure" aria-hidden="true">
+                    <svg class="fig-svg fig-hands" aria-hidden="true" viewBox="0 0 262 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M219.714 41.1904C215.602 31.1398 208.488 22.4961 199.623 16.8033C197.921 15.7106 197.2 13.5709 197.73 11.6341C197.755 11.5294 197.773 11.4182 197.81 11.3135C197.847 11.2088 197.884 11.1106 197.927 11.0125C195.622 9.95246 193.26 8.99058 190.924 8.15304C190.912 8.14649 190.899 8.13995 190.887 8.13995C190.868 8.24464 190.85 8.35588 190.825 8.46057C190.801 8.56527 190.758 8.66996 190.727 8.76811C190.166 10.6657 188.514 11.9743 186.639 11.9743C186.424 11.9743 186.214 11.9547 185.998 11.922L185.561 11.8566C183.415 11.5163 181.88 9.55985 181.88 7.32857C181.88 7.1061 181.892 6.87708 181.923 6.64806C181.948 6.49102 181.979 6.33398 182.016 6.18349C182.04 6.07879 182.071 5.9741 182.102 5.86941C182.133 5.76472 182.176 5.66002 182.213 5.56187C182.201 5.55533 182.182 5.55533 182.17 5.54878C180.536 5.16272 178.896 4.8421 177.293 4.59345C177.287 4.58691 177.275 4.58691 177.263 4.58691C177.263 4.69815 177.263 4.80284 177.25 4.91408C177.244 5.02532 177.226 5.13001 177.213 5.24125C176.917 7.42673 175.166 9.128 173.015 9.16071C157.584 9.39627 143.331 17.0258 133.911 30.0994C133.109 31.2118 131.864 31.8727 130.545 31.8923C130.526 31.8988 130.502 31.8988 130.483 31.8988C129.182 31.8988 127.949 31.2707 127.129 30.1976C117.37 17.4119 102.938 10.2076 87.4891 10.4432C67.5333 10.7442 49.729 23.4906 41.992 42.9767L38.0897 67.0039C38.0835 67.0497 38.0773 67.0955 38.0712 67.1413L37.1341 72.8864L38.9712 76.2693C38.9959 76.3216 39.0206 76.3674 39.0452 76.4198L48.1939 93.2885C49.4701 89.7747 51.8127 86.6863 55.0555 84.6317L57.879 82.8453C64.9748 78.3501 74.1174 80.1953 79.1603 87.1378C79.3206 87.3602 79.4624 87.5958 79.5857 87.8379L111.169 153.055C111.236 153.193 111.298 153.33 111.347 153.474C111.711 154.456 111.748 155.555 111.44 156.569L106.378 173.098C106.643 173.261 106.896 173.418 107.137 173.569C107.716 173.909 108.345 174.269 109.048 174.648C110.003 175.159 110.848 175.591 111.619 175.944C112.217 176.225 112.858 176.52 113.48 176.775C114.491 177.2 115.484 177.554 116.335 177.855L116.643 177.959C117.13 178.13 117.617 178.293 118.11 178.444C119.115 178.745 120.151 178.993 121.205 179.242C121.396 179.288 121.618 179.34 121.84 179.392C122.179 179.471 122.518 179.556 122.863 179.621C123.837 179.805 124.941 179.968 126.31 180.119C126.556 180.151 126.778 180.184 127 180.217C127.228 180.25 127.456 180.282 127.69 180.302C129.398 180.452 130.983 180.511 132.505 180.492C132.524 180.485 132.561 180.485 132.579 180.485C134.053 180.466 135.637 180.354 137.369 180.158C137.573 180.132 137.782 180.093 137.992 180.053C138.239 180.014 138.479 179.968 138.726 179.936C139.749 179.785 140.964 179.595 142.166 179.327C142.486 179.255 142.825 179.163 143.164 179.072C143.386 179.013 143.608 178.947 143.83 178.895C145.069 178.568 146.006 178.293 146.87 178.012C147.387 177.835 147.936 177.626 148.491 177.416L148.651 177.357C149.656 176.978 150.556 176.605 151.425 176.219C152.048 175.938 152.677 175.63 153.312 175.309C154.163 174.878 154.989 174.426 155.802 173.961C155.827 173.942 155.846 173.929 155.87 173.916L150.562 156.569C150.211 155.404 150.303 154.142 150.834 153.055L182.416 87.8379C182.54 87.5958 182.681 87.3602 182.842 87.1378C187.885 80.1953 197.033 78.3501 204.123 82.8388L206.947 84.6382C208.161 85.4038 209.252 86.3198 210.208 87.3472C211.798 89.0615 213.013 91.09 213.808 93.2885L224.868 72.8864L219.714 41.1904ZM88.2166 32.6906H87.785C76.6635 32.8542 66.7565 39.5546 61.9232 50.1679C61.1834 51.8037 59.6422 52.7525 58.0393 52.7525C57.4043 52.7525 56.7693 52.6085 56.1652 52.301C54.0198 51.2017 53.1197 48.46 54.1554 46.183C60.4128 32.4223 73.2481 23.7458 87.6617 23.5299H88.2166C90.5962 23.5299 92.532 25.578 92.532 28.1102C92.532 30.636 90.5962 32.6906 88.2166 32.6906Z" fill="#F57070"/>
+                        <path d="M202.428 174.014C201.25 176.212 201.972 179.013 204.043 180.263C204.135 180.322 204.234 180.361 204.333 180.407C204.425 180.459 204.518 180.511 204.61 180.551C204.709 180.59 204.801 180.622 204.9 180.655L201.7 189.672H169.772L159.329 155.548L189.894 92.4444C190.086 92.2023 190.295 91.9798 190.505 91.7704C192.798 89.4802 196.214 88.8913 199.08 90.3505C199.284 90.4617 199.493 90.5795 199.697 90.7039L202.52 92.5033C205.849 94.6102 207.181 99.0335 205.615 102.796L195.424 127.235C194.494 129.467 195.369 132.071 197.416 133.177C199.462 134.276 201.965 133.484 203.112 131.377L233.129 76.0271C233.628 75.098 233.813 74.0183 233.641 72.9648L228.135 39.0965C228.135 39.0965 228.135 39.0899 228.129 39.0899L228.049 38.5796C227.981 38.1673 227.95 37.7747 227.95 37.4018C227.95 34.4114 229.757 31.8007 232.451 30.9042C235.774 29.7984 239.374 31.7549 240.471 35.2686L253.097 75.7261C253.578 77.2638 253.418 78.952 252.672 80.3588L202.428 174.014Z" fill="#FFE2D2"/>
+                        <path d="M208.469 198.833H157.288V227.839H208.469V198.833Z" fill="#6E78FF"/>
+                        <path d="M104.714 198.833V227.839H49.2482V217.913C49.353 217.913 49.4578 217.906 49.5564 217.893C49.6612 217.887 49.7599 217.867 49.8647 217.854C51.9422 217.527 53.5328 215.636 53.5328 213.333V198.833H104.714Z" fill="#6E78FF"/>
+                        <path d="M102.673 155.548L92.2299 189.672H60.345L56.7694 182.298C56.8742 182.271 56.979 182.258 57.0838 182.226C57.1824 182.193 57.2811 182.154 57.3735 182.114C57.5646 182.036 57.7496 181.951 57.9345 181.84C60.0121 180.603 60.7519 177.815 59.5867 175.604L9.33653 80.3654C8.58441 78.952 8.42412 77.2638 8.89882 75.7327L21.5369 35.2686C22.6281 31.7549 26.2284 29.7984 29.5513 30.9042C32.2453 31.8007 34.0517 34.4114 34.0517 37.4018C34.0517 37.7747 34.0208 38.1673 33.953 38.573L33.6078 40.7061C33.5955 40.7716 33.5831 40.837 33.5708 40.909L29.5636 65.5709C29.5574 65.6101 29.5513 65.6559 29.5451 65.7017L28.3615 72.9583C28.1888 74.0118 28.3738 75.098 28.8731 76.0271L31.4131 80.6991C31.4377 80.7514 31.4624 80.7972 31.4871 80.8496L58.8901 131.377C58.9641 131.508 59.0381 131.632 59.1244 131.757C60.345 133.576 62.6692 134.211 64.5865 133.177C66.6332 132.071 67.5086 129.467 66.5777 127.235L56.3871 102.802C54.8213 99.0335 56.1529 94.6102 59.4819 92.4967L62.3055 90.7104C65.2646 88.8325 68.9759 89.3101 71.4357 91.7115C71.67 91.9405 71.8981 92.1826 72.1077 92.4444L102.673 155.548Z" fill="#FFE2D2"/>
+                        <path d="M202.428 174.014C201.25 176.212 201.972 179.013 204.043 180.263C204.135 180.322 204.234 180.361 204.333 180.407C204.425 180.459 204.518 180.511 204.61 180.551C204.709 180.59 204.801 180.623 204.9 180.655C206.799 181.277 208.907 180.452 209.93 178.548L260.174 84.8868C262.129 81.2291 262.536 76.8385 261.29 72.8471L248.665 32.383C246.094 24.1515 237.66 19.5711 229.862 22.1689C226.847 23.17 224.319 25.1003 222.482 27.5998C217.711 20.0946 211.41 13.669 204.092 8.96438C202.052 7.65571 199.401 8.34931 198.168 10.5152C198.075 10.6722 197.995 10.8423 197.927 11.0125C197.884 11.1106 197.847 11.2088 197.81 11.3134C197.773 11.4181 197.755 11.5294 197.73 11.6341C197.2 13.5709 197.921 15.7106 199.623 16.8033C208.488 22.496 215.602 31.1398 219.714 41.1904L224.868 72.8863L213.808 93.2885C213.013 91.0899 211.798 89.0615 210.208 87.3471C209.252 86.3198 208.161 85.4038 206.947 84.6382L204.123 82.8388C197.033 78.35 187.885 80.1953 182.842 87.1377C182.682 87.3602 182.54 87.5958 182.416 87.8379L150.834 153.055C150.303 154.142 150.211 155.404 150.562 156.569L155.87 173.916C155.846 173.929 155.827 173.942 155.803 173.961C154.989 174.426 154.163 174.877 153.312 175.309C152.677 175.63 152.048 175.937 151.425 176.219C150.556 176.605 149.656 176.978 148.651 177.357L148.491 177.416C147.936 177.626 147.387 177.835 146.87 178.012C146.006 178.293 145.069 178.568 143.83 178.895C143.608 178.947 143.386 179.013 143.164 179.072C142.825 179.163 142.486 179.255 142.166 179.327C140.964 179.595 139.749 179.785 138.726 179.935C138.479 179.968 138.239 180.014 137.992 180.053C137.782 180.093 137.573 180.132 137.369 180.158C135.637 180.354 134.053 180.465 132.579 180.485C132.561 180.485 132.524 180.485 132.505 180.492C130.983 180.511 129.398 180.452 127.691 180.302C127.456 180.282 127.228 180.25 127 180.217C126.778 180.184 126.556 180.151 126.31 180.119C124.941 179.968 123.837 179.805 122.863 179.621C122.518 179.556 122.179 179.471 121.84 179.392C121.618 179.34 121.396 179.288 121.205 179.242C120.151 178.993 119.115 178.745 118.11 178.444C117.617 178.293 117.13 178.13 116.643 177.959L116.335 177.855C115.484 177.554 114.491 177.2 113.48 176.775C112.858 176.52 112.217 176.225 111.619 175.944C110.848 175.591 110.003 175.159 109.048 174.648C108.345 174.269 107.716 173.909 107.137 173.569C106.896 173.418 106.644 173.261 106.378 173.098L111.44 156.569C111.748 155.555 111.711 154.456 111.347 153.474C111.298 153.33 111.236 153.193 111.169 153.055L79.5857 87.8379C79.4624 87.5958 79.3206 87.3602 79.1603 87.1377C74.1174 80.1953 64.9749 78.35 57.8791 82.8453L55.0555 84.6316C51.8128 86.6862 49.4701 89.7747 48.194 93.2885L39.0452 76.4197C39.0206 76.3674 38.9959 76.3216 38.9713 76.2692L37.1341 72.8863L38.0712 67.1413C38.0774 67.0955 38.0835 67.0497 38.0897 67.0039L41.9921 42.9767C49.729 23.4906 67.5333 10.7442 87.4891 10.4432C102.938 10.2076 117.37 17.4118 127.13 30.1975C127.949 31.2707 129.182 31.8988 130.483 31.8988C130.502 31.8988 130.526 31.8988 130.545 31.8923C131.864 31.8726 133.109 31.2118 133.911 30.0994C143.331 17.0258 157.584 9.39625 173.015 9.16068C175.167 9.12797 176.917 7.4267 177.213 5.24122C177.226 5.12998 177.244 5.02529 177.25 4.91405C177.263 4.80282 177.263 4.69812 177.263 4.58689C177.263 4.56726 177.269 4.54108 177.269 4.52145C177.238 2.0088 175.308 0 172.953 0C172.935 0 172.91 0.00654474 172.892 0.00654474C156.536 0.248649 141.315 7.57719 130.391 20.2975C119.134 7.9109 103.715 1.04039 87.3658 1.28904C68.1005 1.5704 50.549 11.7715 39.8898 28.1168C38.0342 25.3686 35.3586 23.242 32.1405 22.1689C24.3358 19.5711 15.9083 24.1515 13.3437 32.383L0.705665 72.8536C-0.533483 76.8385 -0.126599 81.2291 1.81535 84.8672L52.0594 180.079C53.0149 181.892 54.9507 182.729 56.7694 182.298C56.8742 182.271 56.979 182.258 57.0838 182.226C57.1824 182.193 57.2811 182.154 57.3735 182.114C57.5647 182.036 57.7496 181.951 57.9345 181.84C60.0121 180.603 60.7519 177.815 59.5867 175.604L9.33654 80.3654C8.58442 78.952 8.42413 77.2638 8.89883 75.7327L21.5369 35.2686C22.6281 31.7549 26.2284 29.7984 29.5513 30.9042C32.2454 31.8007 34.0517 34.4115 34.0517 37.4018C34.0517 37.7747 34.0208 38.1673 33.953 38.573L33.6078 40.7062C33.5955 40.7716 33.5831 40.837 33.5708 40.909L29.5636 65.5709C29.5575 65.6101 29.5513 65.6559 29.5451 65.7017L28.3615 72.9583C28.1888 74.0118 28.3738 75.098 28.8731 76.0271L31.4131 80.6991C31.4377 80.7514 31.4624 80.7972 31.4871 80.8496L58.8901 131.377C58.9641 131.508 59.0381 131.633 59.1244 131.757C60.345 133.576 62.6692 134.211 64.5865 133.177C66.6332 132.071 67.5087 129.467 66.5778 127.235L56.3871 102.802C54.8213 99.0335 56.1529 94.6102 59.4819 92.4967L62.3055 90.7104C65.2646 88.8325 68.9759 89.3101 71.4357 91.7115C71.67 91.9406 71.8981 92.1827 72.1077 92.4444L102.673 155.548L92.2299 189.672H49.2174C46.8315 189.672 44.9019 191.72 44.9019 194.252V213.333C44.9019 215.865 46.8315 217.913 49.2174 217.913H49.2482C49.353 217.913 49.4578 217.907 49.5564 217.893C49.6612 217.887 49.7599 217.867 49.8647 217.854C51.9422 217.527 53.5328 215.636 53.5328 213.333V198.833H104.714V227.839H49.2174C46.8315 227.839 44.9019 229.887 44.9019 232.42C44.9019 234.945 46.8315 237 49.2174 237H109.029C111.415 237 113.345 234.945 113.345 232.42V194.252C113.345 191.72 111.415 189.672 109.029 189.672H101.305L103.66 181.99C104.128 182.258 104.615 182.533 105.133 182.815C106.249 183.41 107.235 183.907 108.16 184.339C108.844 184.66 109.584 184.993 110.33 185.301C111.52 185.805 112.667 186.217 113.659 186.564L113.974 186.669C114.565 186.871 115.157 187.081 115.755 187.257C116.988 187.63 118.203 187.918 119.368 188.193C119.559 188.239 119.75 188.285 119.941 188.331C120.397 188.435 120.847 188.54 121.328 188.638C122.524 188.861 123.813 189.05 125.354 189.227C125.52 189.247 125.687 189.273 125.853 189.292C126.211 189.345 126.569 189.397 126.957 189.43C128.702 189.58 130.323 189.652 131.864 189.652C132.105 189.652 132.345 189.652 132.579 189.646H132.653C134.453 189.62 136.303 189.495 138.319 189.26C138.676 189.22 139.034 189.155 139.392 189.096C139.564 189.063 139.731 189.037 139.903 189.011C141.075 188.841 142.474 188.618 143.954 188.291C144.404 188.187 144.854 188.069 145.304 187.945C145.495 187.892 145.686 187.84 145.883 187.788C147.307 187.421 148.398 187.1 149.471 186.747C150.118 186.525 150.76 186.283 151.401 186.04L151.549 185.982C152.695 185.55 153.756 185.118 154.791 184.653C155.55 184.313 156.283 183.953 157.011 183.593C157.553 183.312 158.071 183.037 158.583 182.762L160.697 189.672H152.973C150.587 189.672 148.657 191.72 148.657 194.252V232.42C148.657 234.945 150.587 237 152.973 237H212.785C215.171 237 217.1 234.945 217.1 232.42V194.252C217.1 191.72 215.171 189.672 212.785 189.672H169.772L159.329 155.548L189.894 92.4444C190.086 92.2023 190.295 91.9798 190.505 91.7704C192.798 89.4803 196.214 88.8913 199.08 90.3505C199.284 90.4618 199.493 90.5795 199.697 90.7039L202.52 92.5033C205.849 94.6102 207.181 99.0335 205.615 102.796L195.424 127.235C194.494 129.467 195.369 132.071 197.416 133.177C199.462 134.276 201.965 133.484 203.112 131.377L233.129 76.0271C233.628 75.098 233.813 74.0183 233.641 72.9649L228.135 39.0965C228.135 39.0965 228.135 39.0899 228.129 39.0899L228.049 38.5796C227.981 38.1673 227.951 37.7747 227.951 37.4018C227.951 34.4115 229.757 31.8007 232.451 30.9042C235.774 29.7984 239.374 31.7549 240.471 35.2686L253.097 75.7261C253.578 77.2638 253.418 78.952 252.672 80.3588L202.428 174.014ZM208.469 198.833V227.839H157.288V198.833H208.469Z" fill="#48446D"/>
+                        <path d="M190.949 7.38744C190.949 7.61646 190.93 7.83893 190.899 8.06795C190.893 8.09413 190.887 8.11375 190.887 8.13992C190.869 8.24462 190.85 8.35586 190.825 8.46055C190.801 8.56525 190.758 8.66994 190.727 8.76809C190.166 10.6657 188.514 11.9743 186.639 11.9743C186.424 11.9743 186.214 11.9547 185.998 11.922L185.561 11.8565C183.415 11.5163 181.88 9.55983 181.88 7.32855C181.88 7.10608 181.892 6.87706 181.923 6.64804C181.948 6.491 181.979 6.33396 182.016 6.18347C182.04 6.07877 182.071 5.97408 182.102 5.86939C182.133 5.76469 182.176 5.66 182.213 5.56185C182.959 3.67082 184.833 2.47993 186.831 2.79401L187.268 2.86599C189.414 3.1997 190.949 5.15616 190.949 7.38744Z" fill="#48446D"/>
+                        <path d="M92.532 28.1101C92.532 30.6359 90.5962 32.6905 88.2166 32.6905H87.785C76.6635 32.8541 66.7565 39.5544 61.9232 50.1678C61.1834 51.8036 59.6422 52.7524 58.0393 52.7524C57.4044 52.7524 56.7694 52.6084 56.1652 52.3009C54.0198 51.2016 53.1197 48.4599 54.1555 46.1828C60.4128 32.4222 73.2482 23.7457 87.6617 23.5298H88.2166C90.5962 23.5298 92.532 25.5779 92.532 28.1101Z" fill="#48446D"/>
+                        </svg>
+                </figure>
+            </div>
+
+            <a href="regulamin.html" class="btn btn-ghost" data-magnetic>
+                Regulamin darowizn <span class="btn-arrow" aria-hidden="true">↗</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <p class="label">Fundacja</p>
+                <p>NIP 8971958187</p>
+                <p>KRS 0001359566</p>
+                <p>REGON 542459345</p>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Kontakt</p>
+                <a href="mailto:polka@polka.eu" class="footer-link">polka@polka.eu</a>
+                <a href="tel:+48888399665" class="footer-link">+48 888 399 665</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Dokumenty</p>
+                <a href="statut.html" class="footer-link">Statut</a>
+                <a href="sprawozdania.html" class="footer-link">Sprawozdania</a>
+                <a href="regulamin.html" class="footer-link">Regulamin darowizn</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Social</p>
+                <a href="#instagram" class="footer-link">Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+            <span class="wordmark-top"><span>F</span><span>U</span><span>N</span><span>D</span><span>A</span><span>C</span><span>J</span><span>A</span></span>
+            <span class="wordmark-main">Polka</span>
+        </div>
+
+        <div class="footer-bottom label">
+            <span>© <span id="year">2026</span> Fundacja Polka</span>
+            <span>Działamy w Polsce — dla ludzi, zwierząt i lokalnych społeczności</span>
+            <a href="#main" class="to-top">Na górę <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+    (function () {
+        "use strict";
+
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        var root = document.documentElement;
+
+        /* ---------- clock (Warsaw) ---------- */
+        var clock = document.getElementById("clock");
+        function paintClock() {
+            try {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", {
+                    hour: "2-digit", minute: "2-digit", timeZone: "Europe/Warsaw"
+                });
+            } catch (err) {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+            }
+        }
+        paintClock();
+        window.setInterval(paintClock, 20000);
+
+        var year = document.getElementById("year");
+        if (year) { year.textContent = new Date().getFullYear(); }
+
+        /* ---------- scroll progress + header state ---------- */
+        var bar = document.querySelector(".progress span");
+        var topbar = document.getElementById("topbar");
+        function onScroll() {
+            var y = window.scrollY;
+            var max = document.body.scrollHeight - window.innerHeight;
+            bar.style.transform = "scaleX(" + (max > 0 ? y / max : 0) + ")";
+            topbar.classList.toggle("is-stuck", y > 40);
+        }
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        /* ---------- fullscreen menu ---------- */
+        var menuBtn = document.getElementById("menu-btn");
+        var menu = document.getElementById("menu");
+        function setMenu(open) {
+            document.body.classList.toggle("menu-open", open);
+            menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+            if (open) {
+                menu.hidden = false;
+                window.requestAnimationFrame(function () { menu.classList.add("is-open"); });
+            } else {
+                menu.classList.remove("is-open");
+                window.setTimeout(function () { if (!document.body.classList.contains("menu-open")) { menu.hidden = true; } }, 420);
+            }
+        }
+        menuBtn.addEventListener("click", function () {
+            setMenu(!document.body.classList.contains("menu-open"));
+        });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") { setMenu(false); } });
+
+        /* ---------- custom cursor ---------- */
+        var cursor = document.getElementById("cursor");
+        if (fine && !reduce) {
+            var cx = window.innerWidth / 2, cy = window.innerHeight / 2, tx = cx, ty = cy;
+            window.addEventListener("mousemove", function (e) {
+                if (!root.classList.contains("has-cursor")) {
+                    cx = tx = e.clientX;
+                    cy = ty = e.clientY;
+                    root.classList.add("has-cursor");
+                }
+                tx = e.clientX;
+                ty = e.clientY;
+            });
+            (function loop() {
+                cx += (tx - cx) * 0.18;
+                cy += (ty - cy) * 0.18;
+                cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0) translate(-50%,-50%)";
+                window.requestAnimationFrame(loop);
+            }());
+            document.addEventListener("mouseover", function (e) {
+                var hot = e.target.closest("a, button, .index-row, .copy-card");
+                cursor.classList.toggle("is-hot", !!hot);
+            });
+        }
+
+        /* ---------- magnetic buttons ---------- */
+        if (fine && !reduce) {
+            Array.prototype.forEach.call(document.querySelectorAll("[data-magnetic]"), function (el) {
+                el.addEventListener("mousemove", function (e) {
+                    var r = el.getBoundingClientRect();
+                    var dx = (e.clientX - (r.left + r.width / 2)) * 0.22;
+                    var dy = (e.clientY - (r.top + r.height / 2)) * 0.32;
+                    el.style.transform = "translate(" + dx + "px," + dy + "px)";
+                });
+                el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+            });
+        }
+
+        /* ---------- reveal on scroll ---------- */
+        var revealables = document.querySelectorAll(
+            "[data-reveal], [data-reveal-lines] .line, .section-head, .about-aside, .stat, .collab-body > *, .support-head > *, .copy-card, .projects-foot, .footer-col, .support .btn"
+        );
+        if (reduce || !("IntersectionObserver" in window)) {
+            Array.prototype.forEach.call(revealables, function (el) { el.classList.add("in"); });
+        } else {
+            Array.prototype.forEach.call(revealables, function (el, i) {
+                el.classList.add("rv");
+                el.style.transitionDelay = (i % 4) * 70 + "ms";
+            });
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+            Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
+        }
+
+        /* ---------- counting stats ---------- */
+        var nums = document.querySelectorAll(".stat-num");
+        if (!reduce && "IntersectionObserver" in window) {
+            var numObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) { return; }
+                    var el = entry.target;
+                    numObserver.unobserve(el);
+                    var target = parseInt(el.getAttribute("data-count"), 10);
+                    var suffix = el.getAttribute("data-suffix") || "";
+                    var start = performance.now();
+                    (function step(now) {
+                        var p = Math.min(1, (now - start) / 1100);
+                        var eased = 1 - Math.pow(1 - p, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (p < 1) { window.requestAnimationFrame(step); }
+                    }(start));
+                });
+            }, { threshold: 0.6 });
+            Array.prototype.forEach.call(nums, function (el) { numObserver.observe(el); });
+        }
+
+        /* ---------- copy to clipboard ---------- */
+        var toast = document.getElementById("toast");
+        var toastTimer;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add("is-visible");
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(function () { toast.classList.remove("is-visible"); }, 2400);
+        }
+        function fallbackCopy(text) {
+            var f = document.createElement("textarea");
+            f.value = text;
+            f.setAttribute("readonly", "");
+            f.style.position = "fixed";
+            f.style.opacity = "0";
+            document.body.appendChild(f);
+            f.select();
+            try { document.execCommand("copy"); } catch (err) { /* noop */ }
+            document.body.removeChild(f);
+        }
+        Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (el) {
+            el.addEventListener("click", function () {
+                var value = el.getAttribute("data-copy");
+                function done() {
+                    el.classList.add("is-copied");
+                    window.setTimeout(function () { el.classList.remove("is-copied"); }, 1300);
+                    showToast("Skopiowano: " + value);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(value).then(done, function () { fallbackCopy(value); done(); });
+                } else {
+                    fallbackCopy(value);
+                    done();
+                }
+            });
+        });
+    }());
+    </script>
+    <script src="zbiorka.js"></script>
+</body>
+</html>

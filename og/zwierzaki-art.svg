@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" fill="none" role="img" aria-label="Pies i kot z sercem">
+  <g stroke="#48446D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- heart + sparkles -->
+    <path d="M240 122C198 96 203 58 228 60C236 61 240 68 240 73C240 68 244 61 252 60C277 58 282 96 240 122Z" fill="#F57070"/>
+    <path d="M190 62L178 54M196 40L192 26M286 62L298 54M282 40L288 26"/>
+    <circle cx="300" cy="96" r="6" fill="#6E78FF"/>
+    <circle cx="178" cy="98" r="5" fill="#FFE2D2"/>
+
+    <!-- dog tail (outlined stroke) -->
+    <path d="M198 332C238 326 246 296 232 276" stroke-width="20"/>
+    <path d="M198 332C238 326 246 296 232 276" stroke="#FFE2D2" stroke-width="8"/>
+    <!-- dog body -->
+    <path d="M94 360C90 292 106 236 150 226C194 236 210 292 206 360Z" fill="#FFE2D2"/>
+    <path d="M131 296V352M169 296V352"/>
+    <ellipse cx="127" cy="356" rx="17" ry="9" fill="#FFE2D2"/>
+    <ellipse cx="173" cy="356" rx="17" ry="9" fill="#FFE2D2"/>
+    <!-- dog head -->
+    <ellipse cx="150" cy="166" rx="62" ry="56" fill="#FFE2D2"/>
+    <path d="M100 132C70 138 66 200 88 216C106 206 110 166 112 140Z" fill="#6E78FF"/>
+    <path d="M200 132C230 138 234 200 212 216C194 206 190 166 188 140Z" fill="#6E78FF"/>
+    <ellipse cx="150" cy="190" rx="31" ry="23" fill="#FFF7F2"/>
+    <circle cx="128" cy="156" r="6.5" fill="#48446D" stroke="none"/>
+    <circle cx="172" cy="156" r="6.5" fill="#48446D" stroke="none"/>
+    <circle cx="130" cy="154" r="2" fill="#FFFFFF" stroke="none"/>
+    <circle cx="174" cy="154" r="2" fill="#FFFFFF" stroke="none"/>
+    <path d="M144 202Q150 220 156 202" fill="#F57070" stroke-width="4"/>
+    <path d="M139 177Q150 170 161 177Q157 188 150 189Q143 188 139 177Z" fill="#48446D"/>
+    <path d="M150 189V197M150 197Q141 205 133 198M150 197Q159 205 167 198"/>
+    <!-- collar -->
+    <path d="M110 216Q150 238 190 216" stroke="#F57070" stroke-width="10"/>
+    <circle cx="150" cy="236" r="9" fill="#6E78FF"/>
+
+    <!-- cat tail (outlined stroke) -->
+    <path d="M368 348C428 350 440 292 404 270" stroke-width="20"/>
+    <path d="M368 348C428 350 440 292 404 270" stroke="#F57070" stroke-width="8"/>
+    <!-- cat body -->
+    <path d="M286 360C281 302 296 252 330 244C364 252 379 302 374 360Z" fill="#F57070"/>
+    <ellipse cx="330" cy="318" rx="22" ry="32" fill="#FFE2D2"/>
+    <ellipse cx="312" cy="356" rx="15" ry="8" fill="#FFE2D2"/>
+    <ellipse cx="348" cy="356" rx="15" ry="8" fill="#FFE2D2"/>
+    <!-- cat head -->
+    <path d="M284 178L290 120L324 150Z" fill="#F57070"/>
+    <path d="M376 178L370 120L336 150Z" fill="#F57070"/>
+    <ellipse cx="330" cy="196" rx="54" ry="47" fill="#F57070"/>
+    <path d="M294 152L296 134L309 146Z" fill="#FFE2D2" stroke-width="3"/>
+    <path d="M366 152L364 134L351 146Z" fill="#FFE2D2" stroke-width="3"/>
+    <path d="M302 193Q311 184 320 193M340 193Q349 184 358 193"/>
+    <ellipse cx="303" cy="210" rx="7" ry="5" fill="#FFE2D2" stroke="none"/>
+    <ellipse cx="357" cy="210" rx="7" ry="5" fill="#FFE2D2" stroke="none"/>
+    <path d="M324 204H336L330 211Z" fill="#48446D" stroke-width="4"/>
+    <path d="M330 211Q325 220 318 216M330 211Q335 220 342 216" stroke-width="4"/>
+    <path d="M296 206L268 200M296 214L268 216M364 206L392 200M364 214L392 216" stroke-width="4"/>
+
+    <!-- ground -->
+    <path d="M56 362H424"/>
+  </g>
+</svg>

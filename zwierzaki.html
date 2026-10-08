@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zbieramy 5000 zł na pomoc wrocławskim zwierzakom w potrzebie. Zbiórka Fundacji Polka trwa do Mikołajek — 6 grudnia." />
+    <meta name="theme-color" content="#FFE9E9" />
+    <link rel="canonical" href="https://polka.eu/zwierzaki.html" />
+
+    <!-- Social previews: Facebook, Messenger, Instagram (DM links), WhatsApp, LinkedIn, X/Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fundacja Polka" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:url" content="https://polka.eu/zwierzaki.html" />
+    <meta property="og:title" content="Wrocławskie zwierzaki w potrzebie — zbiórka Fundacji Polka" />
+    <meta property="og:description" content="Zbieramy 5000 zł na pomoc wrocławskim zwierzakom w potrzebie. Zbiórka trwa do Mikołajek — 6 grudnia. Każda złotówka się liczy." />
+    <meta property="og:image" content="https://polka.eu/og/og-zwierzaki.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Zbiórka Wrocławskie zwierzaki w potrzebie — cel 5000 zł, do 6 grudnia" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wrocławskie zwierzaki w potrzebie — zbiórka Fundacji Polka" />
+    <meta name="twitter:description" content="Zbieramy 5000 zł na pomoc wrocławskim zwierzakom w potrzebie. Zbiórka trwa do Mikołajek — 6 grudnia. Każda złotówka się liczy." />
+    <meta name="twitter:image" content="https://polka.eu/og/og-zwierzaki.png" />
+    <meta name="twitter:image:alt" content="Zbiórka Wrocławskie zwierzaki w potrzebie — cel 5000 zł, do 6 grudnia" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Wrocławskie zwierzaki w potrzebie — zbiórka Fundacji Polka</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <a href="#main" class="skip-link">Przejdź do treści</a>
+
+    <!-- TOP BAR -->
+    <header class="topbar" id="topbar">
+        <a href="index.html" class="brand" aria-label="Fundacja Polka — strona główna">
+            <span class="visually-hidden">Fundacja Polka</span>
+            <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <rect class="brand-mark-tile" width="128" height="128" rx="28" />
+                <path class="brand-mark-p" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z" />
+                <circle class="brand-mark-dot" cx="94.64" cy="85.7" r="9.3" />
+            </svg>
+        </a>
+
+        <p class="topbar-meta label">KRS&nbsp;0001359566 <span class="sep">/</span> NIP&nbsp;8971958187</p>
+
+        <nav class="topnav" aria-label="Nawigacja główna">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects" aria-current="page"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact" class="topnav-cta">Kontakt <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="menu-btn-label">Menu</span>
+            <span class="menu-btn-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+    <div class="menu" id="menu" hidden>
+        <nav class="menu-nav" aria-label="Menu">
+            <a href="index.html#about"><span class="idx">01</span> Kim jesteśmy</a>
+            <a href="index.html#projects"><span class="idx">02</span> Projekty</a>
+            <a href="index.html#support"><span class="idx">03</span> Wesprzyj nas</a>
+            <a href="statut.html"><span class="idx">04</span> Nasz statut</a>
+            <a href="sprawozdania.html"><span class="idx">05</span> Sprawozdania</a>
+            <a href="index.html#contact"><span class="idx">06</span> Kontakt</a>
+        </nav>
+        <div class="menu-foot label">
+            <span>polka@polka.eu</span>
+            <span>+48 888 399 665</span>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="doc-head">
+            <div class="hero-head">
+                <p class="label">(01) <span class="sep">/</span> Zbiórka</p>
+                <p class="label">Wrocław <span class="sep">/</span> Do 6 grudnia <span class="sep">/</span> <span id="clock">--:--</span></p>
+            </div>
+
+            <div class="lp-hero">
+                <div class="lp-hero-text">
+                    <div class="section-head">
+                        <p class="label">Projekt Fundacji Polka</p>
+                        <h1 class="section-title">Wrocławskie zwierzaki <span class="accent">w&nbsp;potrzebie</span></h1>
+                    </div>
+
+                    <p class="doc-lead">Zbieramy 5000 zł na pomoc wrocławskim zwierzakom, które potrzebują opieki, leczenia i bezpiecznego schronienia. Zbiórka trwa do Mikołajek — 6&nbsp;grudnia. Każda złotówka się liczy.</p>
+                </div>
+
+                <figure class="lp-hero-figure" aria-hidden="true">
+                    <svg class="fig-svg" aria-hidden="true" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g stroke="#48446D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- heart + sparkles -->
+                        <path d="M240 122C198 96 203 58 228 60C236 61 240 68 240 73C240 68 244 61 252 60C277 58 282 96 240 122Z" fill="#F57070"/>
+                        <path d="M190 62L178 54M196 40L192 26M286 62L298 54M282 40L288 26"/>
+                        <circle cx="300" cy="96" r="6" fill="#6E78FF"/>
+                        <circle cx="178" cy="98" r="5" fill="#FFE2D2"/>
+                    
+                        <!-- dog tail (outlined stroke) -->
+                        <path d="M198 332C238 326 246 296 232 276" stroke-width="20"/>
+                        <path d="M198 332C238 326 246 296 232 276" stroke="#FFE2D2" stroke-width="8"/>
+                        <!-- dog body -->
+                        <path d="M94 360C90 292 106 236 150 226C194 236 210 292 206 360Z" fill="#FFE2D2"/>
+                        <path d="M131 296V352M169 296V352"/>
+                        <ellipse cx="127" cy="356" rx="17" ry="9" fill="#FFE2D2"/>
+                        <ellipse cx="173" cy="356" rx="17" ry="9" fill="#FFE2D2"/>
+                        <!-- dog head -->
+                        <ellipse cx="150" cy="166" rx="62" ry="56" fill="#FFE2D2"/>
+                        <path d="M100 132C70 138 66 200 88 216C106 206 110 166 112 140Z" fill="#6E78FF"/>
+                        <path d="M200 132C230 138 234 200 212 216C194 206 190 166 188 140Z" fill="#6E78FF"/>
+                        <ellipse cx="150" cy="190" rx="31" ry="23" fill="#FFF7F2"/>
+                        <circle cx="128" cy="156" r="6.5" fill="#48446D" stroke="none"/>
+                        <circle cx="172" cy="156" r="6.5" fill="#48446D" stroke="none"/>
+                        <circle cx="130" cy="154" r="2" fill="#FFFFFF" stroke="none"/>
+                        <circle cx="174" cy="154" r="2" fill="#FFFFFF" stroke="none"/>
+                        <path d="M144 202Q150 220 156 202" fill="#F57070" stroke-width="4"/>
+                        <path d="M139 177Q150 170 161 177Q157 188 150 189Q143 188 139 177Z" fill="#48446D"/>
+                        <path d="M150 189V197M150 197Q141 205 133 198M150 197Q159 205 167 198"/>
+                        <!-- collar -->
+                        <path d="M110 216Q150 238 190 216" stroke="#F57070" stroke-width="10"/>
+                        <circle cx="150" cy="236" r="9" fill="#6E78FF"/>
+                    
+                        <!-- cat tail (outlined stroke) -->
+                        <path d="M368 348C428 350 440 292 404 270" stroke-width="20"/>
+                        <path d="M368 348C428 350 440 292 404 270" stroke="#F57070" stroke-width="8"/>
+                        <!-- cat body -->
+                        <path d="M286 360C281 302 296 252 330 244C364 252 379 302 374 360Z" fill="#F57070"/>
+                        <ellipse cx="330" cy="318" rx="22" ry="32" fill="#FFE2D2"/>
+                        <ellipse cx="312" cy="356" rx="15" ry="8" fill="#FFE2D2"/>
+                        <ellipse cx="348" cy="356" rx="15" ry="8" fill="#FFE2D2"/>
+                        <!-- cat head -->
+                        <path d="M284 178L290 120L324 150Z" fill="#F57070"/>
+                        <path d="M376 178L370 120L336 150Z" fill="#F57070"/>
+                        <ellipse cx="330" cy="196" rx="54" ry="47" fill="#F57070"/>
+                        <path d="M294 152L296 134L309 146Z" fill="#FFE2D2" stroke-width="3"/>
+                        <path d="M366 152L364 134L351 146Z" fill="#FFE2D2" stroke-width="3"/>
+                        <path d="M302 193Q311 184 320 193M340 193Q349 184 358 193"/>
+                        <ellipse cx="303" cy="210" rx="7" ry="5" fill="#FFE2D2" stroke="none"/>
+                        <ellipse cx="357" cy="210" rx="7" ry="5" fill="#FFE2D2" stroke="none"/>
+                        <path d="M324 204H336L330 211Z" fill="#48446D" stroke-width="4"/>
+                        <path d="M330 211Q325 220 318 216M330 211Q335 220 342 216" stroke-width="4"/>
+                        <path d="M296 206L268 200M296 214L268 216M364 206L392 200M364 214L392 216" stroke-width="4"/>
+                    
+                        <!-- ground -->
+                        <path d="M56 362H424"/>
+                      </g>
+                    </svg>
+                </figure>
+            </div>
+
+            <article class="fundraiser" id="zbiorka" data-fundraiser>
+                <div class="fundraiser-amounts">
+                    <p><span class="fundraiser-raised" data-fr="raised">0 zł</span> <span class="fundraiser-goal">z <span data-fr="goal">5000 zł</span></span></p>
+                    <p class="label" data-fr="percent">0%</p>
+                </div>
+
+                <div class="fundraiser-bar" role="progressbar" aria-label="Postęp zbiórki" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="0" aria-valuetext="Zebrano 0 zł z 5000 zł">
+                    <span></span>
+                </div>
+
+                <p class="label" data-fr="left">Zbiórka trwa do 6 grudnia</p>
+
+                <div class="fundraiser-pay">
+                    <button type="button" class="copy-card copy-card-light copy-card-account" data-copy="16 1600 1462 1786 9193 5000 0001">
+                        <span class="label">Przelew na konto</span>
+                        <span class="copy-value">16 1600 1462 1786 9193 5000 0001</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                    <button type="button" class="copy-card copy-card-light" data-copy="+48 888 399 665">
+                        <span class="label">BLIK na telefon</span>
+                        <span class="copy-value">+48 888 399 665</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                    <button type="button" class="copy-card copy-card-light" data-copy="Wrocławskie zwierzaki">
+                        <span class="label">Tytuł wpłaty</span>
+                        <span class="copy-value">Wrocławskie zwierzaki</span>
+                        <span class="copy-hint label">Kliknij, aby skopiować</span>
+                    </button>
+                </div>
+
+                <p class="fundraiser-note">Wpłacając darowiznę, akceptujesz <a href="regulamin.html">regulamin darowizn</a>. Darowizny są bezzwrotne.</p>
+            </article>
+        </section>
+
+        <section class="about doc">
+            <aside class="about-aside">
+                <p class="label sticky-label">(02) <span class="sep">/</span> O zbiórce</p>
+                <h2 class="about-heading">Pomagamy tam, gdzie żyjemy</h2>
+                <p class="about-intro">
+                    Wrocław to także jego zwierzaki. Chcemy, żeby żaden z nich nie został bez pomocy.
+                </p>
+            </aside>
+
+            <div class="rows">
+                <article class="row" data-reveal>
+                    <p class="row-idx label">01</p>
+                    <h3 class="row-title">Dlaczego zbieramy?</h3>
+                    <div class="row-body">
+                        <p>
+                            We Wrocławiu wiele zwierząt potrzebuje pomocy — bezdomnych, porzuconych,
+                            chorych czy poszkodowanych w wypadkach. Opieka nad nimi to codzienne koszty
+                            karmy, leczenia i schronienia.
+                        </p>
+                        <p>
+                            To pierwszy projekt naszej fundacji. Chcemy zacząć od pomocy tym, którzy
+                            sami nie mogą o nią poprosić.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">02</p>
+                    <h3 class="row-title">Na co przeznaczymy środki?</h3>
+                    <div class="row-body">
+                        <p>Zebrane pieniądze przeznaczymy na pomoc wrocławskim zwierzakom w potrzebie, m.in. na:</p>
+                        <ul class="tags">
+                            <li>Karmę</li>
+                            <li>Leczenie weterynaryjne</li>
+                            <li>Sterylizację i kastrację</li>
+                            <li>Opiekę i schronienie</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="row" data-reveal>
+                    <p class="row-idx label">03</p>
+                    <h3 class="row-title">Jak to rozliczymy?</h3>
+                    <div class="row-body">
+                        <p>
+                            Wpłaty z tytułem „Wrocławskie zwierzaki” trafiają wyłącznie na ten cel.
+                            Po zakończeniu zbiórki opublikujemy rozliczenie — ile zebraliśmy i na co
+                            dokładnie wydaliśmy pieniądze.
+                        </p>
+                        <p>
+                            Jeśli zbierzemy więcej niż 5000 zł, nadwyżkę przeznaczymy na cele zbliżone
+                            do celu zbiórki, zgodnie z regulaminem darowizn.
+                        </p>
+                        <a href="sprawozdania.html" class="link-arrow">Zobacz sprawozdania <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="lp-section">
+            <div class="section-head">
+                <p class="label">(03) <span class="sep">/</span> Jak pomóc</p>
+                <h2 class="section-title">Trzy proste <span class="accent">kroki</span></h2>
+            </div>
+
+            <ol class="steps">
+                <li class="step" data-reveal>
+                    <span class="step-num label">01</span>
+                    <h3 class="step-title">Wpłać</h3>
+                    <p>Przelew na konto lub BLIK na telefon — w dowolnej kwocie. W tytule wpisz „Wrocławskie zwierzaki”.</p>
+                    <a href="#zbiorka" class="link-arrow">Dane do wpłaty <span aria-hidden="true">↑</span></a>
+                </li>
+                <li class="step" data-reveal>
+                    <span class="step-num label">02</span>
+                    <h3 class="step-title">Udostępnij</h3>
+                    <p>Nie możesz wpłacić? Wyślij link znajomym — każde udostępnienie przybliża nas do celu.</p>
+                    <button type="button" class="btn btn-line" data-share>
+                        Udostępnij zbiórkę <span class="btn-arrow" aria-hidden="true">↗</span>
+                    </button>
+                </li>
+                <li class="step" data-reveal>
+                    <span class="step-num label">03</span>
+                    <h3 class="step-title">Śledź postęp</h3>
+                    <p>Pasek na tej stronie aktualizujemy na bieżąco. Po 6 grudnia pokażemy, komu pomogliśmy.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="lp-section">
+            <div class="section-head">
+                <p class="label">(04) <span class="sep">/</span> Pytania</p>
+                <h2 class="section-title">Warto <span class="accent">wiedzieć</span></h2>
+            </div>
+
+            <div class="faq">
+                <details class="faq-item">
+                    <summary>Do kiedy trwa zbiórka?</summary>
+                    <p>Do Mikołajek, czyli do 6 grudnia włącznie. Naszym celem jest 5000 zł.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Jak mogę wpłacić?</summary>
+                    <p>Przelewem na konto <span class="nowrap">16 1600 1462 1786 9193 5000 0001</span> albo BLIK-iem na numer <span class="nowrap">+48 888 399 665</span>. W tytule wpisz „Wrocławskie zwierzaki”, żeby wpłata trafiła na tę zbiórkę.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy mogę wycofać darowiznę?</summary>
+                    <p>Nie. Przekazana darowizna jest ostateczna i nie może zostać wycofana — zgodnie z <a href="regulamin.html#g4">§4 regulaminu darowizn</a>. Przed wpłatą sprawdź kwotę i dane odbiorcy.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy dostanę potwierdzenie wpłaty?</summary>
+                    <p>Tak. Napisz do nas na <a href="mailto:polka@polka.eu">polka@polka.eu</a>, a wystawimy potwierdzenie otrzymania darowizny.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Co się stanie, jeśli zbierzemy więcej?</summary>
+                    <p>Nadwyżkę przeznaczymy na cele zbliżone do celu zbiórki, zgodnie z <a href="regulamin.html#g3">§3 regulaminu darowizn</a>.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Co z moimi danymi?</summary>
+                    <p>Dane z przelewu wykorzystujemy wyłącznie do prawnego rozliczenia zbiórki. Nie wysyłamy reklam i nie przekazujemy danych nikomu — więcej w <a href="regulamin.html#g6">§6 regulaminu</a>.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="doc-foot">
+            <p class="label">Masz pytanie o zbiórkę?</p>
+            <div class="hero-actions">
+                <a href="mailto:polka@polka.eu" class="btn btn-solid" data-magnetic>
+                    Napisz do nas <span class="btn-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="index.html" class="btn btn-line" data-magnetic>
+                    Wróć na stronę główną <span class="btn-arrow" aria-hidden="true">↖</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <p class="label">Fundacja</p>
+                <p>NIP 8971958187</p>
+                <p>KRS 0001359566</p>
+                <p>REGON 542459345</p>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Kontakt</p>
+                <a href="mailto:polka@polka.eu" class="footer-link">polka@polka.eu</a>
+                <a href="tel:+48888399665" class="footer-link">+48 888 399 665</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Dokumenty</p>
+                <a href="statut.html" class="footer-link">Statut</a>
+                <a href="sprawozdania.html" class="footer-link">Sprawozdania</a>
+                <a href="regulamin.html" class="footer-link">Regulamin darowizn</a>
+            </div>
+
+            <div class="footer-col">
+                <p class="label">Social</p>
+                <a href="#instagram" class="footer-link">Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+            <span class="wordmark-top"><span>F</span><span>U</span><span>N</span><span>D</span><span>A</span><span>C</span><span>J</span><span>A</span></span>
+            <span class="wordmark-main">Polka</span>
+        </div>
+
+        <div class="footer-bottom label">
+            <span>© <span id="year">2026</span> Fundacja Polka</span>
+            <span>Działamy w Polsce — dla ludzi, zwierząt i lokalnych społeczności</span>
+            <a href="#main" class="to-top">Na górę <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+    (function () {
+        "use strict";
+
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        var root = document.documentElement;
+
+        /* ---------- clock (Warsaw) ---------- */
+        var clock = document.getElementById("clock");
+        function paintClock() {
+            try {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", {
+                    hour: "2-digit", minute: "2-digit", timeZone: "Europe/Warsaw"
+                });
+            } catch (err) {
+                clock.textContent = new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+            }
+        }
+        paintClock();
+        window.setInterval(paintClock, 20000);
+
+        var year = document.getElementById("year");
+        if (year) { year.textContent = new Date().getFullYear(); }
+
+        /* ---------- scroll progress + header state ---------- */
+        var bar = document.querySelector(".progress span");
+        var topbar = document.getElementById("topbar");
+        function onScroll() {
+            var y = window.scrollY;
+            var max = document.body.scrollHeight - window.innerHeight;
+            bar.style.transform = "scaleX(" + (max > 0 ? y / max : 0) + ")";
+            topbar.classList.toggle("is-stuck", y > 40);
+        }
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        /* ---------- fullscreen menu ---------- */
+        var menuBtn = document.getElementById("menu-btn");
+        var menu = document.getElementById("menu");
+        function setMenu(open) {
+            document.body.classList.toggle("menu-open", open);
+            menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+            if (open) {
+                menu.hidden = false;
+                window.requestAnimationFrame(function () { menu.classList.add("is-open"); });
+            } else {
+                menu.classList.remove("is-open");
+                window.setTimeout(function () { if (!document.body.classList.contains("menu-open")) { menu.hidden = true; } }, 420);
+            }
+        }
+        menuBtn.addEventListener("click", function () {
+            setMenu(!document.body.classList.contains("menu-open"));
+        });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") { setMenu(false); } });
+
+        /* ---------- custom cursor ---------- */
+        var cursor = document.getElementById("cursor");
+        if (fine && !reduce) {
+            var cx = window.innerWidth / 2, cy = window.innerHeight / 2, tx = cx, ty = cy;
+            window.addEventListener("mousemove", function (e) {
+                if (!root.classList.contains("has-cursor")) {
+                    cx = tx = e.clientX;
+                    cy = ty = e.clientY;
+                    root.classList.add("has-cursor");
+                }
+                tx = e.clientX;
+                ty = e.clientY;
+            });
+            (function loop() {
+                cx += (tx - cx) * 0.18;
+                cy += (ty - cy) * 0.18;
+                cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0) translate(-50%,-50%)";
+                window.requestAnimationFrame(loop);
+            }());
+            document.addEventListener("mouseover", function (e) {
+                var hot = e.target.closest("a, button, .index-row, .copy-card");
+                cursor.classList.toggle("is-hot", !!hot);
+            });
+        }
+
+        /* ---------- magnetic buttons ---------- */
+        if (fine && !reduce) {
+            Array.prototype.forEach.call(document.querySelectorAll("[data-magnetic]"), function (el) {
+                el.addEventListener("mousemove", function (e) {
+                    var r = el.getBoundingClientRect();
+                    var dx = (e.clientX - (r.left + r.width / 2)) * 0.22;
+                    var dy = (e.clientY - (r.top + r.height / 2)) * 0.32;
+                    el.style.transform = "translate(" + dx + "px," + dy + "px)";
+                });
+                el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+            });
+        }
+
+        /* ---------- reveal on scroll ---------- */
+        var revealables = document.querySelectorAll(
+            "[data-reveal], [data-reveal-lines] .line, .section-head, .about-aside, .stat, .collab-body > *, .support-head > *, .copy-card, .projects-foot, .footer-col, .support .btn"
+        );
+        if (reduce || !("IntersectionObserver" in window)) {
+            Array.prototype.forEach.call(revealables, function (el) { el.classList.add("in"); });
+        } else {
+            Array.prototype.forEach.call(revealables, function (el, i) {
+                el.classList.add("rv");
+                el.style.transitionDelay = (i % 4) * 70 + "ms";
+            });
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+            Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
+        }
+
+        /* ---------- counting stats ---------- */
+        var nums = document.querySelectorAll(".stat-num");
+        if (!reduce && "IntersectionObserver" in window) {
+            var numObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) { return; }
+                    var el = entry.target;
+                    numObserver.unobserve(el);
+                    var target = parseInt(el.getAttribute("data-count"), 10);
+                    var suffix = el.getAttribute("data-suffix") || "";
+                    var start = performance.now();
+                    (function step(now) {
+                        var p = Math.min(1, (now - start) / 1100);
+                        var eased = 1 - Math.pow(1 - p, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (p < 1) { window.requestAnimationFrame(step); }
+                    }(start));
+                });
+            }, { threshold: 0.6 });
+            Array.prototype.forEach.call(nums, function (el) { numObserver.observe(el); });
+        }
+
+        /* ---------- copy to clipboard ---------- */
+        var toast = document.getElementById("toast");
+        var toastTimer;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add("is-visible");
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(function () { toast.classList.remove("is-visible"); }, 2400);
+        }
+        function fallbackCopy(text) {
+            var f = document.createElement("textarea");
+            f.value = text;
+            f.setAttribute("readonly", "");
+            f.style.position = "fixed";
+            f.style.opacity = "0";
+            document.body.appendChild(f);
+            f.select();
+            try { document.execCommand("copy"); } catch (err) { /* noop */ }
+            document.body.removeChild(f);
+        }
+        Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (el) {
+            el.addEventListener("click", function () {
+                var value = el.getAttribute("data-copy");
+                function done() {
+                    el.classList.add("is-copied");
+                    window.setTimeout(function () { el.classList.remove("is-copied"); }, 1300);
+                    showToast("Skopiowano: " + value);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(value).then(done, function () { fallbackCopy(value); done(); });
+                } else {
+                    fallbackCopy(value);
+                    done();
+                }
+            });
+        });
+
+        /* ---------- share ---------- */
+        Array.prototype.forEach.call(document.querySelectorAll("[data-share]"), function (el) {
+            el.addEventListener("click", function () {
+                var url = window.location.href.split("#")[0];
+                if (navigator.share) {
+                    navigator.share({
+                        title: document.title,
+                        text: "Wesprzyj zbiórkę na wrocławskie zwierzaki w potrzebie!",
+                        url: url
+                    }).catch(function () { /* cancelled */ });
+                } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(function () { showToast("Skopiowano link do zbiórki"); });
+                } else {
+                    fallbackCopy(url);
+                    showToast("Skopiowano link do zbiórki");
+                }
+            });
+        });
+    }());
+    </script>
+    <script src="zbiorka.js"></script>
+</body>
+</html>
