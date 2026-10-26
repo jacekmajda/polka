@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="512" height="512" fill="none" role="img" aria-label="Fundacja Polka">
+  <title>Fundacja Polka</title>
+  <style>
+    .tile, .p, .dot { transform-box: fill-box; transform-origin: center; }
+    .tile { animation: tile 4s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+    .p { transform-origin: left bottom; animation: p 4s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+    .dot { animation: dot 4s linear infinite; }
+
+    @keyframes tile {
+      0%   { transform: scale(0.4) rotate(-12deg); opacity: 0; }
+      15%, 88% { transform: none; opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+    @keyframes p {
+      0%, 4% { transform: translateY(40%); opacity: 0; }
+      22%, 88% { transform: none; opacity: 1; }
+      100% { opacity: 0; }
+    }
+    @keyframes dot {
+      0%, 14% { transform: translateY(-420%); opacity: 0; animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+      16%  { opacity: 1; }
+      24%  { transform: translateY(0) scale(1.25, 0.75); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+      29%  { transform: translateY(-80%) scale(0.95, 1.05); animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+      34%  { transform: translateY(0) scale(1.12, 0.88); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+      37%  { transform: translateY(-18%); }
+      40%, 88% { transform: none; opacity: 1; }
+      100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tile, .p, .dot { animation: none; }
+    }
+  </style>
+  <rect class="tile" width="128" height="128" rx="28" fill="#48446D"/>
+  <path class="p" fill="#FFE9E9" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z"/>
+  <circle class="dot" fill="#F57070" cx="94.64" cy="85.7" r="9.3"/>
+</svg>

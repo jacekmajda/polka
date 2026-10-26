@@ -358,25 +358,67 @@ body.menu-open .menu-btn { border-color: rgba(255, 233, 233, 0.32); }
     transition: transform 0.4s var(--ease);
 }
 
+.brand-mark-tile,
+.brand-mark-p,
+.brand-mark-dot {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
 .brand-mark-tile {
     fill: var(--ink);
     transition: fill 0.35s var(--ease);
+    animation: brand-tile-in 0.7s var(--ease) backwards;
 }
 
 .brand-mark-p {
     fill: var(--paper);
-    transition: fill 0.35s var(--ease);
+    transform-origin: left bottom;
+    transition: fill 0.35s var(--ease), transform 0.4s var(--ease);
+    animation: brand-p-in 0.8s var(--ease) 0.15s backwards;
 }
 
 .brand-mark-dot {
     fill: var(--accent);
     transition: fill 0.35s var(--ease);
+    animation:
+        brand-dot-in 0.9s linear 0.55s backwards,
+        brand-dot-hop 2.2s linear 1.45s infinite;
 }
 
 .brand:hover .brand-mark { transform: scale(1.06); }
 .brand:hover .brand-mark-tile { fill: var(--accent); }
-.brand:hover .brand-mark-p { fill: #fff; }
+.brand:hover .brand-mark-p { fill: #fff; transform: skewX(-6deg); }
 .brand:hover .brand-mark-dot { fill: #fff; }
+
+@keyframes brand-tile-in {
+    from { transform: scale(0.4) rotate(-12deg); opacity: 0; }
+}
+
+@keyframes brand-p-in {
+    from { transform: translateY(40%); opacity: 0; }
+}
+
+/* kropka spada i odbija się jak piłka */
+@keyframes brand-dot-in {
+    0%   { transform: translateY(-420%); opacity: 0; animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+    10%  { opacity: 1; }
+    45%  { transform: translateY(0) scale(1.25, 0.75); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+    65%  { transform: translateY(-80%) scale(0.95, 1.05); animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+    82%  { transform: translateY(0) scale(1.12, 0.88); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+    92%  { transform: translateY(-18%); }
+    100% { transform: translateY(0); }
+}
+
+/* po wejściu kropka podskakuje w pętli */
+@keyframes brand-dot-hop {
+    0%, 50% { transform: translateY(0); animation-timing-function: ease-in; }
+    56%  { transform: translateY(0) scale(1.18, 0.82); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+    72%  { transform: translateY(-110%) scale(0.94, 1.06); animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+    86%  { transform: translateY(0) scale(1.15, 0.85); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+    93%  { transform: translateY(-14%); }
+    100% { transform: translateY(0); }
+}
 
 .topbar-meta {
     justify-self: center;

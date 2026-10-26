@@ -1,5 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none" role="img" aria-label="Fundacja Polka">
   <title>Fundacja Polka</title>
+  <style>
+    .logo-dot { transform-box: fill-box; transform-origin: center; animation: hop 2.2s linear infinite; }
+    @keyframes hop {
+      0%, 50% { transform: translateY(0); animation-timing-function: ease-in; }
+      56%  { transform: translateY(0) scale(1.18, 0.82); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+      72%  { transform: translateY(-110%) scale(0.94, 1.06); animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+      86%  { transform: translateY(0) scale(1.15, 0.85); animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1); }
+      93%  { transform: translateY(-14%); }
+      100% { transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .logo-dot { animation: none; }
+    }
+  </style>
   <rect width="128" height="128" rx="28" fill="#48446D"/>
   <path class="logo-ink" fill="#FFE9E9" d="M24.06 95V33H50.14Q62.27 33 69.15 38.7Q76.04 44.4 76.04 54.61Q76.04 64.82 69.15 70.52Q62.27 76.22 50.32 76.22H42.66V95ZM49.78 47.59H42.66V61.63H49.32Q56.98 61.63 56.98 54.61Q56.98 47.59 49.78 47.59Z"/>
   <circle class="logo-dot" fill="#F57070" cx="94.64" cy="85.7" r="9.3"/>
