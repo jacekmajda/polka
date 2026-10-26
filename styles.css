@@ -132,8 +132,12 @@ button {
     text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 0.35em;
-    margin-left: 500px;
-    margin-right: 500px;
+    /* 500px przy szerokości 1440px, skalowane razem z ekranem */
+    margin-inline: 37.65%;
+}
+
+@supports (container-type: inline-size) {
+    .wordmark-top { margin-inline: 37.65cqw; }
 }
 
 .wordmark-main {
@@ -1589,6 +1593,7 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
     .hero { gap: clamp(22px, 4vh, 36px); }
     .hero-head .label:last-child { display: none; }
     .hero-wordmark { padding: clamp(10px, 3vh, 24px) 0; }
+    .wordmark-top { margin-inline: 22cqw; }
     .hero-foot { grid-template-columns: 1fr; }
     .hero-claim { font-size: clamp(1.5rem, 7vw, 2rem); }
     .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
