@@ -1374,7 +1374,7 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
 
 .footer-top {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 32px;
     padding: 0 var(--gut) clamp(40px, 8vh, 80px);
 }
@@ -1393,22 +1393,18 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
 }
 
 .footer-address {
-    margin-top: 10px;
     font-style: normal;
     display: flex;
     flex-direction: column;
-    gap: 2px;
-}
-
-.footer-address-label {
-    font-size: 0.78rem;
-    color: var(--ink);
+    gap: 7px;
 }
 
 .footer-note {
+    margin-top: 6px;
     font-size: 0.78rem;
     line-height: 1.45;
-    max-width: 26ch;
+    color: var(--ink-55);
+    max-width: 24ch;
 }
 
 .footer-link {
