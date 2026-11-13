@@ -1374,7 +1374,7 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
 
 .footer-top {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 32px;
     padding: 0 var(--gut) clamp(40px, 8vh, 80px);
 }
@@ -1394,6 +1394,7 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
 
 .footer-address {
     font-style: normal;
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -1644,10 +1645,15 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
     .partner-text { padding-left: 0; padding-top: 12px; border-left: 0; border-top: 1px solid rgba(255, 233, 233, 0.28); }
     .support-figure { justify-content: flex-start; padding-left: 0; }
 
-    .footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+    .footer-top { gap: 20px; }
+}
+
+@media (max-width: 820px) {
+    .footer-top { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
 }
 
 @media (max-width: 640px) {
+    .footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
     .hero { gap: clamp(22px, 4vh, 36px); }
     .hero-head .label:last-child { display: none; }
     .hero-wordmark { padding: clamp(10px, 3vh, 24px) 0; }
