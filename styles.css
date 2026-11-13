@@ -1392,6 +1392,25 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
     color: var(--ink);
 }
 
+.footer-address {
+    margin-top: 10px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-address-label {
+    font-size: 0.78rem;
+    color: var(--ink);
+}
+
+.footer-note {
+    font-size: 0.78rem;
+    line-height: 1.45;
+    max-width: 26ch;
+}
+
 .footer-link {
     width: fit-content;
     transition: color 0.3s ease, transform 0.35s var(--ease);
