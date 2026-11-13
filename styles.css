@@ -1413,6 +1413,8 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
     transition: color 0.3s ease, transform 0.35s var(--ease);
 }
 
+.footer-link-mobile { display: none; }
+
 .footer-link:hover {
     color: var(--accent);
     transform: translateX(4px);
@@ -1654,6 +1656,8 @@ body.menu-open .menu-btn-bars i:last-child { transform: translateY(-2.75px) rota
 
 @media (max-width: 640px) {
     .footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+    .footer-col-social { display: none; }
+    .footer-link-mobile { display: block; }
     .hero { gap: clamp(22px, 4vh, 36px); }
     .hero-head .label:last-child { display: none; }
     .hero-wordmark { padding: clamp(10px, 3vh, 24px) 0; }
