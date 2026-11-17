@@ -4,7 +4,7 @@
 (function () {
     "use strict";
 
-    var RAISED = 600;
+    var RAISED = 650;
     var GOAL = 5000;
     var END = "2026-12-06T23:59:59+01:00";
 
